@@ -2,19 +2,20 @@
 OrientaÃ§Ãµes gerais sobre o projeto [aqui](https://gdoc.pub/doc/e/2PACX-1vTp3jQlWSshEoyxzSCdPBIh0NbkKV8w9eu6ZIzqbpHJPTTOuyXvb4j2gX90BvZh5tgWqE2eOPyraJIj)
 
 ## [nome do projeto]
-[insira uma breve descriÃ§Ã£o da proposta]
+IndieBoy- Uma plataforma interativa com um usúario que poderá abrir sessões para comprar jogos disponibilizados pelos desenvolvedores. 
 
 ### Equipe
-- nome 1
-- nome 2
-- ...
+- Ulisses Chaves
+- Pedro Carneiro
 
 ### Requisitos
 - versÃ£o do Java
 - dependÃªncias (bibliotecas utilizadas, etc)
 
 ### Funcionalidades
-[insira uma descriÃ§Ã£o bÃ¡sica das funcionalidades do sistema]
+- Os clientes poderão abrir sessões e a partir do catálogo poderá fazer compra de jogos.
+- Os desenvolvedores poderão adicionar e remover jogos ao catálogo e informar todas as descrições de seus jogos adicionados.
+- Os administradores terão acesso a todos os registros do sistema.
 
 ### Diagrama de Classes
 [insira o diagrama de classes do sistema]
