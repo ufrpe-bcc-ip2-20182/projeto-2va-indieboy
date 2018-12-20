@@ -1,7 +1,7 @@
-package br.ufrpe.bcc.lp2.controladores;
+package br.ufrpe.bcc.ip2.controladores;
 
 import br.ufrpe.bcc.ip2.classesBasicas.Usuario;
-import br.ufrpe.bcc.lp2.repositorios.RepositorioDeUsuario;
+import br.ufrpe.bcc.ip2.repositorios.RepositorioDeUsuario;
 
 public class ControladorDeUsuario {
 	

@@ -1,4 +1,4 @@
-package br.ufrpe.bcc.lp2.repositorios;
+package br.ufrpe.bcc.ip2.repositorios;
 
 import java.util.LinkedList;
 import br.ufrpe.bcc.ip2.classesBasicas.Usuario;
