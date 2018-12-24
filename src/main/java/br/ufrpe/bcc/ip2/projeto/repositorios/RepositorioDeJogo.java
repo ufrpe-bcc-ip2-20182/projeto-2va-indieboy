@@ -4,11 +4,17 @@ import java.util.LinkedList;
 
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Jogo;
 
-public class RepositorioDeJogo {
-private LinkedList <Jogo> repositorio;
+public class RepositorioDeJogo implements IRepositorioDeJogo{
 	
-	public RepositorioDeJogo() {
-		repositorio = new LinkedList <Jogo>();
+	private LinkedList <Jogo> repositorio = new LinkedList <Jogo>();
+	private static RepositorioDeJogo repositorioDeJogo;
+	
+	private RepositorioDeJogo() {}
+	
+	public RepositorioDeJogo getInstance(){
+		if(repositorioDeJogo == null)
+			repositorioDeJogo = new RepositorioDeJogo();
+		return repositorioDeJogo;
 	}
 	
 	public void adicionar(Jogo jogo){

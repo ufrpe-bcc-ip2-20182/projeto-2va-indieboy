@@ -4,11 +4,17 @@ import java.util.LinkedList;
 
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Sessao;
 
-public class RepositorioDeSessao {
-	private LinkedList <Sessao> repositorio;
+public class RepositorioDeSessao implements IRepositorioDeSessao {
 	
-	public RepositorioDeSessao(){
-		repositorio = new LinkedList <Sessao>();
+	private static RepositorioDeSessao repositorioDeSessao;
+	private LinkedList <Sessao> repositorio = new LinkedList <Sessao>();
+	
+	private RepositorioDeSessao(){}
+	
+	public static RepositorioDeSessao getInstance(){
+		if(repositorioDeSessao == null)
+			repositorioDeSessao = new RepositorioDeSessao();
+		return repositorioDeSessao;
 	}
 	
 	public void adicionar(Sessao sessao){

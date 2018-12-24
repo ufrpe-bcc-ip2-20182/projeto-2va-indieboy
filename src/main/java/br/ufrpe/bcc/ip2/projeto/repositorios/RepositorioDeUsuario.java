@@ -4,12 +4,18 @@ import java.util.LinkedList;
 
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Usuario;
 
-public class RepositorioDeUsuario {
+public class RepositorioDeUsuario implements IRepositorioDeUsuario{
 	
-	private LinkedList <Usuario> repositorio;
+	private static RepositorioDeUsuario repositorioUsuario;
+	private LinkedList <Usuario> repositorio = new LinkedList <Usuario>();;
 	
-	public RepositorioDeUsuario() {
-		repositorio = new LinkedList <Usuario>();
+	private RepositorioDeUsuario (){}
+	
+	public static RepositorioDeUsuario getInstance(){
+		if(repositorioUsuario == null){
+			repositorioUsuario = new RepositorioDeUsuario();
+		}
+		return repositorioUsuario;
 	}
 	
 	public void adicionar(Usuario usuario){
