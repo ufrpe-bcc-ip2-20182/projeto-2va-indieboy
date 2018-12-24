@@ -1,4 +1,4 @@
-package br.ufrpe.bcc.ip2.classesBasicas;
+package br.ufrpe.bcc.ip2.projeto.classesBasicas;
 
 public class Admin extends Usuario{
 	public Admin(String login, String senha) {

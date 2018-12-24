@@ -1,15 +1,15 @@
-package br.ufrpe.bcc.ip2.classesBasicas;
+package br.ufrpe.bcc.ip2.projeto.classesBasicas;
 
-//import java.util.LinkedList;
+import java.util.LinkedList;
 
 public class Desenvolvedor extends Usuario{
-	//private LinkedList <Jogo> jogos;
+	private LinkedList <Jogo> jogos;
 	private String nome;
 	
 	public Desenvolvedor(String login, String senha, String nome) {
 		super(login, senha);
 		this.nome = nome;
-		//jogos = new LinkedList<Jogo>();
+		jogos = new LinkedList<Jogo>();
 	}
 	
 	public String getNome(){
@@ -20,11 +20,11 @@ public class Desenvolvedor extends Usuario{
 		this.nome = nome;
 	}
 
-	/*public LinkedList<Jogo> getJogos() {
+	public LinkedList<Jogo> getJogos() {
 		return jogos;
 	}
 
 	public void addJogo(Jogo jogo) {
 		jogos.add(jogo);
-	}*/
+	}
 }

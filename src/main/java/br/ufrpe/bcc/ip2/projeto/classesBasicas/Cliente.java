@@ -1,20 +1,20 @@
-package br.ufrpe.bcc.ip2.classesBasicas;
+package br.ufrpe.bcc.ip2.projeto.classesBasicas;
 
 import java.time.LocalDate;
-//import java.util.LinkedList;
+import java.util.LinkedList;
 
 public class Cliente extends Usuario{
 	private String nome;
 	private LocalDate nascimento;
 	private Cartao cartao;
-	//private LinkedList <Jogo> jogosComprados;
+	private LinkedList <Jogo> jogosComprados;
 	
 	public Cliente(String login, String senha, String nome, LocalDate nascimento, Cartao cartao) {
 		super(login, senha);
 		this.nome = nome;
 		this.nascimento = nascimento;
 		this.cartao = cartao;
-		//this.jogosComprados  = new LinkedList<Jogo>();
+		this.jogosComprados  = new LinkedList<Jogo>();
 	}
 
 	public String getNome() {
@@ -41,11 +41,11 @@ public class Cliente extends Usuario{
 		this.cartao = cartao;
 	}
 
-	/*public LinkedList<Jogo> getJogosComprados() {
+	public LinkedList<Jogo> getJogosComprados() {
 		return jogosComprados;
 	}
 	
 	public void addJogoComprado(Jogo jogoComprado){
 			jogosComprados.add(jogoComprado);
-	}*/
+	}
 }
