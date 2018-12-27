@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="336.0" prefWidth="580.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Text layoutX="71.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informações Pessoais: " />
+      <Label layoutX="71.0" layoutY="98.0" text="Nome:" />
+      <TextField layoutX="127.0" layoutY="93.0" prefHeight="31.0" prefWidth="371.0" />
+      <PasswordField layoutX="201.0" layoutY="270.0" prefHeight="31.0" prefWidth="293.0" />
+      <PasswordField layoutX="124.0" layoutY="228.0" prefHeight="31.0" prefWidth="371.0" />
+      <TextField layoutX="124.0" layoutY="180.0" prefHeight="31.0" prefWidth="371.0" />
+      <Label layoutX="72.0" layoutY="275.0" text="Confirme a senha:" />
+      <Label layoutX="72.0" layoutY="233.0" text="Senha:" />
+      <Label layoutX="71.0" layoutY="185.0" text="Login: " />
+      <Text layoutX="74.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Defina Login e Senha:" />
+   </children>
+</AnchorPane>

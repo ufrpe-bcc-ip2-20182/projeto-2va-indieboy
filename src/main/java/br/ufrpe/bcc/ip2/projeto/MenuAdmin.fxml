@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="308.0" prefWidth="646.0">
+         <children>
+            <Button layoutX="57.0" layoutY="96.0" mnemonicParsing="false" text="Ver Desenvolvedores" />
+            <Button layoutX="59.0" layoutY="139.0" mnemonicParsing="false" text="Editar Jogo" />
+            <Button layoutX="59.0" layoutY="183.0" mnemonicParsing="false" text="Adicionar Admin" />
+            <Button layoutX="59.0" layoutY="227.0" mnemonicParsing="false" text="Alterar Senha" />
+            <Text layoutX="69.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selecione uma opção:" wrappingWidth="165.18896484375" />
+            <Button layoutX="57.0" layoutY="49.0" mnemonicParsing="false" text="Ver Clientes" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
