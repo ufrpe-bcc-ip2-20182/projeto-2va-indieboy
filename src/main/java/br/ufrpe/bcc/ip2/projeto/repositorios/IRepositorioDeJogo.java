@@ -6,6 +6,7 @@ public interface IRepositorioDeJogo {
 
 	public void adicionar(Jogo jogo);
 	public Jogo procurar(String nome);
+	public int procurarIndice(String nome);
 	public void remover(String nome);
-	public void atualizar(int indice, double novoPreco);
+	public void atualizar(String nome, double novoPreco);
 }

@@ -1,7 +1,6 @@
 package br.ufrpe.bcc.ip2.projeto.repositorios;
 
 import java.util.LinkedList;
-
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Jogo;
 
 public class RepositorioDeJogo implements IRepositorioDeJogo{
@@ -30,12 +29,23 @@ public class RepositorioDeJogo implements IRepositorioDeJogo{
 		return null;
 	}
 	
+	public int procurarIndice(String nome){
+		for(int i = 0; i<this.repositorio.size(); ++i){
+			if(nome.equals(this.repositorio.get(i).getNome())){
+				return i;
+			}
+		}
+		return -1;
+	}
+	
 	public void remover(String nome){
 		Jogo jogo = procurar(nome);
 		repositorio.remove(jogo);
 	}
 	
-	public void atualizar(int indice, double novoPreco){
+	public void atualizar(String nome, double novoPreco){
+		int indice = procurarIndice(nome);
 		repositorio.get(indice).setPreco(novoPreco);
 	}
+		
 }
