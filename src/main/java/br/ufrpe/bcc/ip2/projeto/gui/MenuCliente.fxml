@@ -5,12 +5,13 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="255.0" prefWidth="517.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="306.0" prefWidth="517.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Button layoutX="108.0" layoutY="68.0" mnemonicParsing="false" text="Editar Informações" />
       <Button layoutX="108.0" layoutY="113.0" mnemonicParsing="false" text="Ver Biblioteca" />
       <Button layoutX="108.0" layoutY="161.0" mnemonicParsing="false" text="Ver Catálogo" />
       <Label layoutX="105.0" layoutY="34.0" prefHeight="21.0" prefWidth="151.0" text="Selecione uma opção:" />
       <Button layoutX="105.0" layoutY="210.0" mnemonicParsing="false" text="Alterar Senha" />
+      <Button layoutX="108.0" layoutY="255.0" mnemonicParsing="false" text="Voltar" />
    </children>
 </AnchorPane>

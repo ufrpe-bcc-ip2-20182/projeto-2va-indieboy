@@ -6,8 +6,7 @@
 <?import javafx.scene.text.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="323.0" prefWidth="541.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<AnchorPane prefHeight="323.0" prefWidth="541.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <PasswordField layoutX="181.0" layoutY="204.0" prefHeight="31.0" prefWidth="293.0" />
       <PasswordField layoutX="104.0" layoutY="162.0" prefHeight="31.0" prefWidth="371.0" />
@@ -16,5 +15,7 @@
       <Label layoutX="52.0" layoutY="167.0" text="Senha:" />
       <Label layoutX="51.0" layoutY="119.0" text="Login: " />
       <Text layoutX="54.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Defina Login e Senha:" />
+      <Button layoutX="104.0" layoutY="263.0" mnemonicParsing="false" text="Ok" />
+      <Button layoutX="341.0" layoutY="263.0" mnemonicParsing="false" text="Voltar" />
    </children>
 </AnchorPane>
