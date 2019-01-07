@@ -47,4 +47,12 @@ public class RepositorioDeUsuario implements IRepositorioDeUsuario{
 	public void atualizar(int indice, String novaSenha){
 		repositorio.get(indice).setSenha(novaSenha);
 	}
+
+	public Usuario login(String login, String senha){
+		for(int i = 0; i<this.repositorio.size(); ++i){
+			if(login.equals(this.repositorio.get(i).getLogin()) && senha.equals(this.repositorio.get(i).getSenha()))
+				return this.repositorio.get(i);
+		}
+		return null;
+	}
 }

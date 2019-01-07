@@ -9,5 +9,6 @@ public interface IRepositorioDeUsuario {
 	public int procurarIndice(String login);
 	public void remover(String login);
 	public void atualizar(int indice, String novaSenha);
+	public Usuario login(String login, String senha);
 	
 }

@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 public class Sessao {
-	private short numSessao;
+	private int numSessao;
 	private LocalDate data;
 	private LocalTime horarioInicio;
 	private LocalTime horarioFim;
@@ -34,7 +34,7 @@ public class Sessao {
 		this.pagamento += pagamento;
 	}
 
-	public short getNumSessao() {
+	public int getNumSessao() {
 		return numSessao;
 	}
 

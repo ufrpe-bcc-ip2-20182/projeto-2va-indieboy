@@ -10,7 +10,7 @@ public class RepositorioDeJogo implements IRepositorioDeJogo{
 	
 	private RepositorioDeJogo() {}
 	
-	public RepositorioDeJogo getInstance(){
+	public static RepositorioDeJogo getInstance(){
 		if(repositorioDeJogo == null)
 			repositorioDeJogo = new RepositorioDeJogo();
 		return repositorioDeJogo;
