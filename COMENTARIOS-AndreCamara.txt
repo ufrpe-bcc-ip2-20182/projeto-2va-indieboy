@@ -1,0 +1,8 @@
+Olá pessoal,
+vou repassar alguns cometarios por aqui mesmo ok? Qualquer duvida podem me enviar um email.
+
+- Não identifiquei os passos para implantação do sistema de vocês (ie. o que é necessário para usá-lo? instalar o mongodb? mysql? etc.),
+  nem um jar que possa ser executado caso queira testá-lo.
+- Vocês poderiam colocar algum screenshot de algumas telas do sistema e apresentá-las no README.md?
+
+Andre
