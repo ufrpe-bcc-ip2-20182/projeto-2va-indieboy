@@ -2,9 +2,9 @@ package br.ufrpe.bcc.ip2.projeto.controladores;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
-
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Cliente;
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Sessao;
+import br.ufrpe.bcc.ip2.projeto.exceptions.*;
 import br.ufrpe.bcc.ip2.projeto.repositorios.IRepositorioDeSessao;
 
 public class ControladorDeSessao {
@@ -15,11 +15,11 @@ public class ControladorDeSessao {
 		this.repositorio = repositorio;
 	}
 
-	public void adicionarSessao(Sessao sessao){
+	public void adicionarSessao(Sessao sessao) throws NaoExisteException{
 		if(sessao != null){
 			this.repositorio.adicionar(sessao);
 		}else{
-			//excessao
+			throw new NaoExisteException("Sessao");
 		}
 	}
 	
@@ -27,42 +27,38 @@ public class ControladorDeSessao {
 		return this.repositorio.procurar(numSessao);
 	}
 	
-	public Cliente verificarCliente(int numSessao){
+	public Cliente verificarCliente(int numSessao) throws NaoExisteException{
 		Sessao sessao = this.repositorio.procurar(numSessao);
 		if(sessao != null)
 			return sessao.getCliente();
-			
-		else{
-			return null; //so pra n ficar no erro
-			//excessao?
-		}
+		else throw new NaoExisteException("Mesa");
 	}
 	
-	public LocalDate verificarData(int numSessao){
+	public LocalDate verificarData(int numSessao) throws NaoExisteException{
 		Sessao sessao = this.repositorio.procurar(numSessao);
 		if(sessao != null)
 			return sessao.getData();
-		else return null; //excessao?
+		else throw new NaoExisteException("Mesa");
 	}
 	
-	public LocalTime verificarHorarioInicio (int numSessao){
+	public LocalTime verificarHorarioInicio (int numSessao) throws NaoExisteException{
 		Sessao sessao = this.repositorio.procurar(numSessao);
 		if(sessao != null)
 			return sessao.getHorarioInicio();
-		else return null;
+		else throw new NaoExisteException("Mesa");
 	}
 	
-	public LocalTime verificarHorarioFim (int numSessao){
+	public LocalTime verificarHorarioFim (int numSessao) throws NaoExisteException{
 		Sessao sessao = this.repositorio.procurar(numSessao);
 		if(sessao != null)
 			return sessao.getHorarioFim();
-		else return null;
+		else throw new NaoExisteException("Mesa");
 	}
 	
-	public double verificarPagamento (int numSessao){
+	public double verificarPagamento (int numSessao) throws NaoExisteException{
 		Sessao sessao = this.repositorio.procurar(numSessao);
 		if (sessao != null)
 			return sessao.getPagamento();
-		else return -1; // ??
+		else throw new NaoExisteException("Mesa");
 	}
 }
