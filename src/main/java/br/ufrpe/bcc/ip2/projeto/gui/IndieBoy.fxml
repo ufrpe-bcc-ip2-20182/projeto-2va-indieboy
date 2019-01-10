@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
@@ -14,5 +15,10 @@
       <Label layoutX="150.0" layoutY="196.0" text="Senha" />
       <TextField layoutX="207.0" layoutY="137.0" promptText="Login" />
       <Button layoutX="408.0" layoutY="298.0" mnemonicParsing="false" text="Sair" />
+      <Label layoutX="82.0" layoutY="43.0" prefHeight="21.0" prefWidth="176.0" text="IndieBoy">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

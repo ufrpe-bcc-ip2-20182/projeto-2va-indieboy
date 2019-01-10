@@ -6,19 +6,22 @@
 <?import javafx.scene.text.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="381.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="410.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Text layoutX="71.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informações Pessoais: " />
       <Label layoutX="71.0" layoutY="98.0" text="Nome:" />
       <TextField layoutX="127.0" layoutY="93.0" prefHeight="31.0" prefWidth="371.0" />
-      <PasswordField layoutX="201.0" layoutY="270.0" prefHeight="31.0" prefWidth="293.0" />
       <PasswordField layoutX="124.0" layoutY="228.0" prefHeight="31.0" prefWidth="371.0" />
       <TextField layoutX="124.0" layoutY="180.0" prefHeight="31.0" prefWidth="371.0" />
-      <Label layoutX="72.0" layoutY="275.0" text="Confirme a senha:" />
       <Label layoutX="72.0" layoutY="233.0" text="Senha:" />
       <Label layoutX="71.0" layoutY="185.0" text="Login: " />
       <Text layoutX="74.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Defina Login e Senha:" />
       <Button layoutX="126.0" layoutY="327.0" mnemonicParsing="false" text="Ok" />
       <Button layoutX="356.0" layoutY="327.0" mnemonicParsing="false" text="Voltar" />
+      <Label layoutX="55.0" layoutY="14.0" prefHeight="27.0" prefWidth="258.0" text="Cadastro Desenvolvedor">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

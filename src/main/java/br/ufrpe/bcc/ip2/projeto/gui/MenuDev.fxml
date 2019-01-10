@@ -6,12 +6,18 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="239.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="377.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button layoutX="57.0" layoutY="96.0" mnemonicParsing="false" text="Adicionar Jogo" />
-      <Button layoutX="57.0" layoutY="148.0" mnemonicParsing="false" text="Alterar Senha" />
-      <Text layoutX="69.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selecione uma opção:" wrappingWidth="165.18896484375" />
-      <Button layoutX="57.0" layoutY="49.0" mnemonicParsing="false" text="Ver Jogos" />
-      <Button layoutX="57.0" layoutY="194.0" mnemonicParsing="false" text="Voltar" />
+      <Button layoutX="56.0" layoutY="128.0" mnemonicParsing="false" text="Adicionar Jogo" />
+      <Button layoutX="57.0" layoutY="173.0" mnemonicParsing="false" text="Alterar Senha" />
+      <Text layoutX="64.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selecione uma opção:" wrappingWidth="165.18896484375" />
+      <Button layoutX="55.0" layoutY="86.0" mnemonicParsing="false" text="Ver Jogos" />
+      <Button layoutX="55.0" layoutY="263.0" mnemonicParsing="false" text="Voltar" />
+      <Button layoutX="52.0" layoutY="214.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="119.0" text="Editar Jogo" />
+      <Label layoutX="56.0" layoutY="14.0" prefHeight="21.0" prefWidth="182.0" text="Menu Desenvolvedor">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
