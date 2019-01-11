@@ -6,18 +6,22 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="216.0" prefWidth="322.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<AnchorPane prefHeight="188.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <AnchorPane layoutX="-204.0" layoutY="-86.0" prefHeight="200.0" prefWidth="226.0" />
-      <Label layoutX="50.0" layoutY="39.0" prefHeight="27.0" prefWidth="127.0" text="Editar Preço">
+      <Label layoutX="32.0" layoutY="38.0" prefHeight="27.0" prefWidth="127.0" text="Editar Preço">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="11.0" layoutY="78.0" text="Novo Preço" />
-      <TextField layoutX="107.0" layoutY="73.0" />
-      <Button layoutX="70.0" layoutY="138.0" mnemonicParsing="false" text="Ok" />
-      <Button layoutX="201.0" layoutY="138.0" mnemonicParsing="false" text="Voltar" />
+      <Label layoutX="60.0" layoutY="78.0" text="Novo Preço:" />
+      <TextField layoutX="151.0" layoutY="73.0" />
+      <Button layoutX="99.0" layoutY="138.0" mnemonicParsing="false" text="Ok" />
+      <Button layoutX="199.0" layoutY="138.0" mnemonicParsing="false" text="Voltar" />
+      <Label layoutX="9.0" layoutY="4.0" text="IndieBoy">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
