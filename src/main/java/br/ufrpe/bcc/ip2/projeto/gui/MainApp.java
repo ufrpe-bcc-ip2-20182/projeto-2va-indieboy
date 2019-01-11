@@ -32,7 +32,7 @@ public class MainApp extends Application{
 	
 	public void start(Stage stagePrimare) throws Exception {
 		stage = stagePrimare;
-	    criaCena("IndieBoy.fxml");            //0
+	    //criaCena("TelaInicial.fxml");            //0
 	    criaCena("MenuAdmin.fxml");           //1
 	    criaCena("MenuCliente.fxml");         //2
 	    criaCena("MenuDev.fxml");             //3
