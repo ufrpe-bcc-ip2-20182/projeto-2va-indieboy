@@ -32,16 +32,17 @@ public class MainApp extends Application{
 	
 	public void start(Stage stagePrimare) throws Exception {
 		stage = stagePrimare;
-	    //criaCena("TelaInicial.fxml");            //0
+	    criaCena("TelaInicial.fxml");         //0
 	    criaCena("MenuAdmin.fxml");           //1
 	    criaCena("MenuCliente.fxml");         //2
 	    criaCena("MenuDev.fxml");             //3
-	    criaCena("CadastroAdmin.fxml");       //4
-	    criaCena("CadastroCliente.fxml");     //5
-	    criaCena("CadastroDev.fxml");         //6
-	    criaCena("AdicionarJogo.fxml");       //7
-	    criaCena("AlterarPreco.fxml");        //8
-	    criaCena("AlterarSenha.fxml");        //9
+	    criaCena("EscolhaCadastro.fxml");     //4
+	    criaCena("CadastroAdmin.fxml");       //5
+	    criaCena("CadastroCliente.fxml");     //6
+	    criaCena("CadastroDev.fxml");         //7
+	    criaCena("AdicionarJogo.fxml");       //8
+	    criaCena("AlterarPreco.fxml");        //9
+	    criaCena("AlterarSenha.fxml");        //10
 	        
 	    stage.setScene(cenas.get(0));
 	    stage.setTitle("IndieBoy");
@@ -50,7 +51,6 @@ public class MainApp extends Application{
 	}
 	
     public static void main(String[] args) {
-        //System.out.println("Executando...");
     	launch(args);
     }
 }
