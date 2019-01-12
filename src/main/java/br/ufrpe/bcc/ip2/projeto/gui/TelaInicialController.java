@@ -53,7 +53,6 @@ public class TelaInicialController {
 			alert.setContentText("Login ou senha estão incorretas.");
 			alert.showAndWait();
 		}
-		
     }
 
     @FXML

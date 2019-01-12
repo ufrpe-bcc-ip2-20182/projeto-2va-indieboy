@@ -6,16 +6,15 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="316.0" prefWidth="333.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button layoutX="60.0" layoutY="103.0" mnemonicParsing="false" text="Ver Biblioteca" />
-      <Button layoutX="60.0" layoutY="153.0" mnemonicParsing="false" text="Ver Catálogo" />
-      <Label layoutX="46.0" layoutY="73.0" prefHeight="21.0" prefWidth="151.0" text="Selecione uma opção:" />
-      <Button layoutX="60.0" layoutY="203.0" mnemonicParsing="false" text="Alterar Senha" />
-      <Button layoutX="149.0" layoutY="253.0" mnemonicParsing="false" text="Voltar" />
-      <Label layoutX="32.0" layoutY="38.0" prefHeight="21.0" prefWidth="194.0" text="Menu Cliente">
+      <Button layoutX="206.0" layoutY="100.0" mnemonicParsing="false" text="Ver Biblioteca" />
+      <Button layoutX="208.0" layoutY="150.0" mnemonicParsing="false" text="Ver Catálogo" />
+      <Button layoutX="207.0" layoutY="202.0" mnemonicParsing="false" text="Alterar Senha" />
+      <Button layoutX="226.0" layoutY="252.0" mnemonicParsing="false" text="Voltar" />
+      <Label layoutX="180.0" layoutY="31.0" prefHeight="34.0" prefWidth="140.0" text="Menu Cliente">
          <font>
-            <Font size="18.0" />
+            <Font size="23.0" />
          </font>
       </Label>
       <Label layoutX="9.0" layoutY="4.0" text="IndieBoy">

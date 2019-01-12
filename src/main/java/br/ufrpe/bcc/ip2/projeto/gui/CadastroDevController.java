@@ -1,9 +1,6 @@
 package br.ufrpe.bcc.ip2.projeto.gui;
 
-import java.time.LocalDate;
-
-import br.ufrpe.bcc.ip2.projeto.classesBasicas.Cartao;
-import br.ufrpe.bcc.ip2.projeto.classesBasicas.Cliente;
+import br.ufrpe.bcc.ip2.projeto.classesBasicas.Desenvolvedor;
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Usuario;
 import br.ufrpe.bcc.ip2.projeto.controladores.Fachada;
 import br.ufrpe.bcc.ip2.projeto.exceptions.CadastroInvalidoException;
@@ -12,24 +9,17 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
-import javafx.scene.control.DatePicker;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert.AlertType;
 
-public class CadastroClienteController {
+public class CadastroDevController {
 
     @FXML
     private TextField txtLogin;
 
     @FXML
     private Button btOk;
-
-    @FXML
-    private DatePicker txtData;
-
-    @FXML
-    private TextField txtNumCartao;
 
     @FXML
     private Button btVoltar;
@@ -39,26 +29,18 @@ public class CadastroClienteController {
 
     @FXML
     private TextField txtNome;
-    
-    @FXML
-    private PasswordField txtSenhaCartao;
 
     @FXML
     void handleOkButton(ActionEvent event) {
+    	String nome = txtNome.getText();
     	String login = txtLogin.getText();
     	String senha = txtSenha.getText();
-    	String nome = txtNome.getText();
-    	String numCartao = txtNumCartao.getText();
-    	int senhaCartao = Integer.parseInt(txtSenhaCartao.getText());
-    	LocalDate data = txtData.getValue();
     	
-    	Cartao cartao = new Cartao(numCartao, senhaCartao);
-    	Usuario usuario = new Cliente(login, senha, nome, data, cartao);
-    	
-		try {
-			Fachada.getInstance().contUsuario().adicionarUsuario(usuario);
+    	Usuario desenvolvedor = new Desenvolvedor(login, senha, nome);
+    	try {
+			Fachada.getInstance().contUsuario().adicionarUsuario(desenvolvedor);
 			Alert alert = new Alert(AlertType.CONFIRMATION);
-			alert.setTitle("Usuario Cadastrado.");
+			alert.setTitle("Desenvolvedor Cadastrado.");
 			alert.setHeaderText(null);
 			alert.setContentText("Cadastro efetuado com sucesso.");
 			alert.showAndWait();
@@ -76,12 +58,11 @@ public class CadastroClienteController {
 			alert.setContentText("Por favor escolha outro login");
 			alert.showAndWait();
 		}
-		
-    	
     }
 
     @FXML
     void handleVoltarButton(ActionEvent event) {
     	MainApp.trocaCena(4);
     }
+
 }

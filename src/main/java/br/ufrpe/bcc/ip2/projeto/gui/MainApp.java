@@ -2,6 +2,12 @@ package br.ufrpe.bcc.ip2.projeto.gui;
 
 import javafx.application.Application;
 import java.util.ArrayList;
+
+import br.ufrpe.bcc.ip2.projeto.classesBasicas.Admin;
+import br.ufrpe.bcc.ip2.projeto.classesBasicas.Usuario;
+import br.ufrpe.bcc.ip2.projeto.controladores.Fachada;
+import br.ufrpe.bcc.ip2.projeto.exceptions.CadastroInvalidoException;
+import br.ufrpe.bcc.ip2.projeto.exceptions.JaExisteException;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -51,6 +57,12 @@ public class MainApp extends Application{
 	}
 	
     public static void main(String[] args) {
+    	Usuario admin = new Admin("adm", "123");
+    	try {
+			Fachada.getInstance().contUsuario().adicionarUsuario(admin);
+		} catch (CadastroInvalidoException | JaExisteException e) {
+			e.printStackTrace();
+		}
     	launch(args);
     }
 }
