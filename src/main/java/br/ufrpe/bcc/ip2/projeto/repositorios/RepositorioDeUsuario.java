@@ -9,14 +9,14 @@ public class RepositorioDeUsuario implements IRepositorioDeUsuario{
 	private static RepositorioDeUsuario repositorioUsuario;
 	private LinkedList <Usuario> repositorio = new LinkedList <Usuario>();;
 	
-	private RepositorioDeUsuario (){}
-	
 	public static RepositorioDeUsuario getInstance(){
 		if(repositorioUsuario == null){
 			repositorioUsuario = new RepositorioDeUsuario();
 		}
 		return repositorioUsuario;
 	}
+	
+	private RepositorioDeUsuario (){}
 	
 	public void adicionar(Usuario usuario){
 		repositorio.add(usuario);

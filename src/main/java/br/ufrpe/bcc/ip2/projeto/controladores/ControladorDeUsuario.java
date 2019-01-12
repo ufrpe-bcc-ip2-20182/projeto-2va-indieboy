@@ -18,7 +18,7 @@ public class ControladorDeUsuario {
 		if(usuario != null){
 			if(this.repositorio.procurar(usuario.getLogin()) == null){
 				this.repositorio.adicionar(usuario);
-			}throw new JaExisteException("Usuario");
+			}else throw new JaExisteException("Usuario");
 		}else throw new CadastroInvalidoException();
 	}
 	
