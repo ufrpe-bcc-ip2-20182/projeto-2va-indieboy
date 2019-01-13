@@ -13,7 +13,7 @@ public class VerDevController {
 	@FXML
     private Button btVoltar;
 	
-	@FXML private TableView <Desenvolvedor> tableView;
+	@FXML private TableView <Desenvolvedor> tableViewDev;
 	
 	@FXML private TableColumn <Desenvolvedor,String> tableColumnLogin;
 	

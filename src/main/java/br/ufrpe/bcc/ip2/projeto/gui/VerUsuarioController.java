@@ -13,7 +13,7 @@ public class VerUsuarioController {
 	@FXML
     private Button btVoltar;
 	
-	@FXML private TableView <Usuario> tableView;
+	@FXML private TableView <Usuario> tableViewUsuario;
 	
 	@FXML private TableColumn <Usuario,String> tableColumnLogin;
 	
@@ -21,7 +21,7 @@ public class VerUsuarioController {
 	
 	@FXML private TableColumn <Usuario,String> tableColumnNome;
 	
-	@FXML private TableColumn <Usuario,LocalDate> nascimento;
+	@FXML private TableColumn <Usuario,LocalDate> tableColumnNascimento;
 	
 	@FXML
     void handleVoltarButton(ActionEvent event) {
