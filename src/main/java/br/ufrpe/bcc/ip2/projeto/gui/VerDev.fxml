@@ -6,11 +6,13 @@
 <?import javafx.scene.text.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="326.0" prefWidth="331.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="326.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrpe.bcc.ip2.projeto.gui.VerDevController">
    <children>
-      <TableView layoutX="72.0" layoutY="72.0" prefHeight="200.0" prefWidth="202.0">
+      <TableView layoutX="55.0" layoutY="73.0" prefHeight="200.0" prefWidth="601.0">
          <columns>
-            <TableColumn prefWidth="200.0" text="Nome" />
+            <TableColumn fx:id="nome" prefWidth="200.0" text="Nome" />
+            <TableColumn fx:id="login" prefWidth="200.0" text="Login" />
+            <TableColumn fx:id="senha" prefWidth="200.0" text="Senha" />
          </columns>
       </TableView>
       <Label layoutX="9.0" layoutY="4.0" text="IndieBoy">
@@ -18,12 +20,12 @@
             <Font size="12.0" />
          </font>
       </Label>
-      <Label layoutX="32.0" layoutY="38.0" text="Desenvolvedores">
+      <Label layoutX="32.0" layoutY="38.0" text="Usuários">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Button layoutX="250.0" layoutY="281.0" mnemonicParsing="false" text="Voltar" />
-      <Button layoutX="50.0" layoutY="281.0" mnemonicParsing="false" text="ok" />
+      <Button layoutX="299.0" layoutY="281.0" mnemonicParsing="false" text="Voltar" />
+      <Button layoutX="99.0" layoutY="281.0" mnemonicParsing="false" text="ok" />
    </children>
 </AnchorPane>
