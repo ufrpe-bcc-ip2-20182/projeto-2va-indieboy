@@ -13,7 +13,7 @@
           <TableColumn prefWidth="200.0" text="Nome" />
           <TableColumn prefWidth="75.0" text="Preço" />
             <TableColumn prefWidth="90.0" text="Gênero" />
-            <TableColumn prefWidth="99.0" text="Class Etária" />
+            <TableColumn prefWidth="99.0" text="Desenvolvedor" />
         </columns>
       </TableView>
       <Label layoutX="9.0" layoutY="4.0" text="IndieBoy">

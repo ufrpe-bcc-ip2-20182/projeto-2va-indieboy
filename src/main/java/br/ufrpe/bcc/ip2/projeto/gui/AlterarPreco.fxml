@@ -6,22 +6,24 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="188.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="200.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrpe.bcc.ip2.projeto.gui.AlterarPrecoController">
    <children>
       <AnchorPane layoutX="-204.0" layoutY="-86.0" prefHeight="200.0" prefWidth="226.0" />
-      <Label layoutX="32.0" layoutY="38.0" prefHeight="27.0" prefWidth="127.0" text="Editar Preço">
+      <Label layoutX="125.0" layoutY="21.0" prefHeight="27.0" prefWidth="104.0" text="Alterar Preço">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="60.0" layoutY="78.0" text="Novo Preço:" />
-      <TextField layoutX="151.0" layoutY="73.0" />
-      <Button layoutX="99.0" layoutY="138.0" mnemonicParsing="false" text="Ok" />
-      <Button layoutX="199.0" layoutY="138.0" mnemonicParsing="false" text="Voltar" />
+      <Label layoutX="55.0" layoutY="122.0" text="Novo Preço:" />
+      <TextField fx:id="txtNovoPreco" layoutX="150.0" layoutY="118.0" />
+      <Button fx:id="btOk" layoutX="101.0" layoutY="161.0" mnemonicParsing="false" onAction="#handleOkButton" text="Ok" />
       <Label layoutX="9.0" layoutY="4.0" text="IndieBoy">
          <font>
             <Font size="12.0" />
          </font>
       </Label>
+      <Label layoutX="55.0" layoutY="83.0" text="Nome do Jogo:" />
+      <TextField fx:id="txtNomeJogo" layoutX="150.0" layoutY="79.0" />
+      <Button fx:id="btBack" layoutX="229.0" layoutY="161.0" mnemonicParsing="false" onAction="#handleBackButton" text="Voltar" />
    </children>
 </AnchorPane>

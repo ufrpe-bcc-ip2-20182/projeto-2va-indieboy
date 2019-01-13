@@ -12,6 +12,15 @@ public class Desenvolvedor extends Usuario{
 		jogos = new LinkedList<Jogo>();
 	}
 	
+	public Jogo procurarJogo(String nome){
+		for(int i = 0; i<this.jogos.size(); ++i){
+			if(nome.equals(this.jogos.get(i).getNome())){
+				return this.jogos.get(i);
+			}
+		}
+		return null;
+	}
+	
 	public String getNome(){
 		return nome;
 	}

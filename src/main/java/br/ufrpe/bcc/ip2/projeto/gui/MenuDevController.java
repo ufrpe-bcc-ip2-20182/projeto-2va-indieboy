@@ -33,7 +33,7 @@ public class MenuDevController {
 
     @FXML
     void handleVerJogosButton(ActionEvent event) {
-
+    	MainApp.trocaCena(14);
     }
 
     @FXML

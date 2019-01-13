@@ -4,6 +4,8 @@ import javafx.application.Application;
 import java.util.ArrayList;
 
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Admin;
+import br.ufrpe.bcc.ip2.projeto.classesBasicas.Cliente;
+import br.ufrpe.bcc.ip2.projeto.classesBasicas.Desenvolvedor;
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Usuario;
 import br.ufrpe.bcc.ip2.projeto.controladores.Fachada;
 import br.ufrpe.bcc.ip2.projeto.exceptions.CadastroInvalidoException;
@@ -52,6 +54,10 @@ public class MainApp extends Application{
 	    criaCena("VerBiblioteca.fxml");            //11
 	    criaCena("VerCatalogo.fxml");              //12
 	    criaCena("AlterarSenhaDesenvolvedor.fxml");//13
+	    criaCena("VerJogosDev.fxml");			   //14
+	    criaCena("VerSessoes.fxml");               //15
+	    criaCena("VerUsuario.fxml");               //16
+	    criaCena("VerDev.fxml");				   //17
 	        
 	    stage.setScene(cenas.get(0));
 	    stage.setTitle("IndieBoy");
@@ -66,6 +72,14 @@ public class MainApp extends Application{
 		} catch (CadastroInvalidoException | JaExisteException e) {
 			e.printStackTrace();
 		}
+    	
+    	Usuario dev = new Desenvolvedor("dev", "123", "dev");
+    	try {
+			Fachada.getInstance().contUsuario().adicionarUsuario(dev);
+		} catch (CadastroInvalidoException | JaExisteException e) {
+			e.printStackTrace();
+		}
+    	
     	launch(args);
     }
 }
