@@ -29,7 +29,7 @@ public class Fachada {
 	public ControladorDeUsuario contUsuario() {
 		return this.controladorUsuario;
 	}
-	public ControladorDeJogo contProduto() {
+	public ControladorDeJogo contJogo() {
 		return this.controladorJogo;
 	}
 	public ControladorDeSessao contMesa() {

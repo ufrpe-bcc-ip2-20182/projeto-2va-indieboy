@@ -16,7 +16,7 @@ public class ControladorDeJogo {
 		if(jogo != null){
 			if(this.repositorio.procurar(jogo.getNome()) == null){
 				this.repositorio.adicionar(jogo);
-			} throw new JaExisteException("Jogo");
+			}else throw new JaExisteException("Jogo");
 		}else throw new CadastroInvalidoException();
 	}
 	

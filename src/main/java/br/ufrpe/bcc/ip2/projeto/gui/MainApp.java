@@ -38,17 +38,20 @@ public class MainApp extends Application{
 	
 	public void start(Stage stagePrimare) throws Exception {
 		stage = stagePrimare;
-	    criaCena("TelaInicial.fxml");         //0
-	    criaCena("MenuAdmin.fxml");           //1
-	    criaCena("MenuCliente.fxml");         //2
-	    criaCena("MenuDev.fxml");             //3
-	    criaCena("EscolhaCadastro.fxml");     //4
-	    criaCena("CadastroAdmin.fxml");       //5
-	    criaCena("CadastroCliente.fxml");     //6
-	    criaCena("CadastroDev.fxml");         //7
-	    criaCena("AdicionarJogo.fxml");       //8
-	    criaCena("AlterarPreco.fxml");        //9
-	    criaCena("AlterarSenha.fxml");        //10
+	    criaCena("TelaInicial.fxml");              //0
+	    criaCena("MenuAdmin.fxml");                //1
+	    criaCena("MenuCliente.fxml");              //2
+	    criaCena("MenuDev.fxml");                  //3
+	    criaCena("EscolhaCadastro.fxml");          //4
+	    criaCena("CadastroAdmin.fxml");            //5
+	    criaCena("CadastroCliente.fxml");          //6
+	    criaCena("CadastroDev.fxml");              //7
+	    criaCena("AdicionarJogo.fxml");            //8  
+	    criaCena("AlterarPreco.fxml");             //9
+	    criaCena("AlterarSenha.fxml");             //10
+	    criaCena("VerBiblioteca.fxml");            //11
+	    criaCena("VerCatalogo.fxml");              //12
+	    criaCena("AlterarSenhaDesenvolvedor.fxml");//13
 	        
 	    stage.setScene(cenas.get(0));
 	    stage.setTitle("IndieBoy");

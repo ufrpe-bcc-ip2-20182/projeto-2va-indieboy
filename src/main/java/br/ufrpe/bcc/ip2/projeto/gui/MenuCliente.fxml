@@ -6,13 +6,13 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrpe.bcc.ip2.projeto.gui.MenuClienteController">
    <children>
-      <Button layoutX="206.0" layoutY="100.0" mnemonicParsing="false" text="Ver Biblioteca" />
-      <Button layoutX="208.0" layoutY="150.0" mnemonicParsing="false" text="Ver Catálogo" />
-      <Button layoutX="207.0" layoutY="202.0" mnemonicParsing="false" text="Alterar Senha" />
-      <Button layoutX="226.0" layoutY="252.0" mnemonicParsing="false" text="Voltar" />
-      <Label layoutX="180.0" layoutY="31.0" prefHeight="34.0" prefWidth="140.0" text="Menu Cliente">
+      <Button fx:id="btBiblioteca" layoutX="197.0" layoutY="99.0" mnemonicParsing="false" onAction="#handleBibliotecaButton" text="Ver Biblioteca" />
+      <Button fx:id="btCatalogo" layoutX="199.0" layoutY="144.0" mnemonicParsing="false" onAction="#handleCatalogoButton" text="Ver Catálogo" />
+      <Button fx:id="btAlterarSenha" layoutX="198.0" layoutY="188.0" mnemonicParsing="false" onAction="#handleAlterarSenhaButton" text="Alterar Senha" />
+      <Button fx:id="btVoltar" layoutX="198.0" layoutY="252.0" mnemonicParsing="false" onAction="#handleVoltarButton" text="Sair da Conta" />
+      <Label layoutX="171.0" layoutY="31.0" prefHeight="34.0" prefWidth="140.0" text="Menu Cliente">
          <font>
             <Font size="23.0" />
          </font>
