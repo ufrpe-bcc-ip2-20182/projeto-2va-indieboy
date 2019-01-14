@@ -2,7 +2,10 @@ package br.ufrpe.bcc.ip2.projeto.controladores;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.LinkedList;
+
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Cliente;
+import br.ufrpe.bcc.ip2.projeto.classesBasicas.Jogo;
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Sessao;
 import br.ufrpe.bcc.ip2.projeto.exceptions.*;
 import br.ufrpe.bcc.ip2.projeto.repositorios.IRepositorioDeSessao;
@@ -61,4 +64,9 @@ public class ControladorDeSessao {
 			return sessao.getPagamento();
 		else throw new NaoExisteException("Mesa");
 	}
+	
+	public LinkedList<Sessao> getSessaoArray() {
+		return repositorio.getSessaoArray();
+	}
+	
 }

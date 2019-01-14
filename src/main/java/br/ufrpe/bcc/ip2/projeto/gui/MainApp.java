@@ -2,13 +2,14 @@ package br.ufrpe.bcc.ip2.projeto.gui;
 
 import javafx.application.Application;
 import java.util.ArrayList;
-
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Admin;
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Desenvolvedor;
+import br.ufrpe.bcc.ip2.projeto.classesBasicas.Sessao;
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Usuario;
 import br.ufrpe.bcc.ip2.projeto.controladores.Fachada;
 import br.ufrpe.bcc.ip2.projeto.exceptions.CadastroInvalidoException;
 import br.ufrpe.bcc.ip2.projeto.exceptions.JaExisteException;
+import br.ufrpe.bcc.ip2.projeto.exceptions.NaoExisteException;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -79,6 +80,13 @@ public class MainApp extends Application{
 			e.printStackTrace();
 		}
     	
+    	/*Sessao sessao = new Sessao(1, null, 4);
+    	try {
+			Fachada.getInstance().contSessao().adicionarSessao(sessao);
+		} catch (NaoExisteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}*/
     	launch(args);
     }
 }

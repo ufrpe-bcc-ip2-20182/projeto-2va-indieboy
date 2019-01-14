@@ -2,6 +2,7 @@ package br.ufrpe.bcc.ip2.projeto.repositorios;
 
 import java.util.LinkedList;
 
+import br.ufrpe.bcc.ip2.projeto.classesBasicas.Jogo;
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Sessao;
 
 public class RepositorioDeSessao implements IRepositorioDeSessao {
@@ -28,5 +29,9 @@ public class RepositorioDeSessao implements IRepositorioDeSessao {
 			}
 		}
 		return null;
+	}
+	
+	public LinkedList<Sessao> getSessaoArray() {
+		return repositorio;
 	}
 }

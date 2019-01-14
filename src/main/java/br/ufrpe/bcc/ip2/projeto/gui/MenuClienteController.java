@@ -1,12 +1,17 @@
 package br.ufrpe.bcc.ip2.projeto.gui;
 
+import br.ufrpe.bcc.ip2.projeto.classesBasicas.Sessao;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
 public class MenuClienteController {
 
-    @FXML
+	private static int contadorDeSessoes = 0;
+	
+	private Sessao sessao = new Sessao(contador(), null);
+    
+	@FXML
     private Button btVoltar;
 
     @FXML
@@ -35,7 +40,12 @@ public class MenuClienteController {
 
     @FXML
     void handleVoltarButton(ActionEvent event) {
+    	
     	MainApp.trocaCena(0);
     }
+    
+    public static int contador(){
+		return contadorDeSessoes + 1;
+	}
 
 }

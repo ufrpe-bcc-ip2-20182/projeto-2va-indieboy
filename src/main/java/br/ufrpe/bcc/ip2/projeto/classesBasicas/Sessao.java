@@ -11,7 +11,7 @@ public class Sessao {
 	private Cliente cliente;
 	private double pagamento;
 	
-	public Sessao(short numSessao, Cliente cliente, short indice){
+	public Sessao(int numSessao, Cliente cliente){
 		this.numSessao = numSessao;
 		this.cliente = cliente;
 		data = LocalDate.now();

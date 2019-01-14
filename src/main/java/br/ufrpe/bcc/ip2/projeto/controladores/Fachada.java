@@ -1,5 +1,8 @@
 package br.ufrpe.bcc.ip2.projeto.controladores;
 
+import java.util.LinkedList;
+
+import br.ufrpe.bcc.ip2.projeto.classesBasicas.Sessao;
 import br.ufrpe.bcc.ip2.projeto.repositorios.*;
 
 public class Fachada {
@@ -32,12 +35,16 @@ public class Fachada {
 	public ControladorDeJogo contJogo() {
 		return this.controladorJogo;
 	}
-	public ControladorDeSessao contMesa() {
+	public ControladorDeSessao contSessao() {
 		return this.controladorSessao;
 	}
 	
 	public ControladorDeLogin contLogin() {
 		return this.controladorLogin;
+	}
+	
+	public LinkedList<Sessao> getSessaoArray() {
+		return this.controladorSessao.getSessaoArray();
 	}
 	
 }
