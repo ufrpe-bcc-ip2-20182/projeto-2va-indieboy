@@ -52,7 +52,7 @@ public class MainApp extends Application{
 	    criaCena("AlterarPreco.fxml");             //9
 	    criaCena("AlterarSenha.fxml");             //10
 	    criaCena("VerBiblioteca.fxml");            //11
-	    criaCena("VerCatalogo.fxml");              //12
+	   // criaCena("VerCatalogo.fxml");              //12
 	    criaCena("AlterarSenhaDesenvolvedor.fxml");//13
 	    criaCena("VerJogosDev.fxml");			   //14
 	    criaCena("VerSessoes.fxml");               //15
