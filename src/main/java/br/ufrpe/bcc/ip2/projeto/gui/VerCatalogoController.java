@@ -21,7 +21,10 @@ public class VerCatalogoController implements Initializable{
 	
     @FXML
     private Button btVoltar;
-
+    
+    @FXML
+    private Button btComprar;
+    
     @FXML
     private TableView<Jogo> tableViewCatalogo;
 
@@ -37,6 +40,11 @@ public class VerCatalogoController implements Initializable{
     @FXML
     void handleVoltarButton(ActionEvent event) {
     	MainApp.trocaCena(2);
+    }
+    
+    @FXML
+    void handleComprarButton(ActionEvent event) {
+    	MainApp.trocaCena(18);
     }
     
     public void initialize(URL arg0, ResourceBundle arg1) {

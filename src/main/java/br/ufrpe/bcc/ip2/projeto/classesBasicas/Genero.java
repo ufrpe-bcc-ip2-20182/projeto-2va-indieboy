@@ -1,7 +1,7 @@
 package br.ufrpe.bcc.ip2.projeto.classesBasicas;
 
 public enum Genero {
-	Ação(1),        Terror(2),
+	Acao(1),        Terror(2),
 	Esporte(3),     Outros(4),
 	Plataforma(5),  Puzzle(6),          
 	FPS(7),        RTS(8);
