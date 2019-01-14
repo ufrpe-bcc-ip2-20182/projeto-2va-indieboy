@@ -57,6 +57,7 @@ public class MainApp extends Application{
 	    criaCena("VerSessoes.fxml");               //15
 	    criaCena("VerUsuario.fxml");               //16
 	    criaCena("VerDev.fxml");				   //17
+	    criaCena("Compra.fxml");				   //18
 	        
 	    stage.setScene(cenas.get(0));
 	    stage.setTitle("IndieBoy");

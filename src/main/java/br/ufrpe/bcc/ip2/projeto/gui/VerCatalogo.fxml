@@ -26,6 +26,6 @@
          </font>
       </Label>
       <Button fx:id="btVoltar" layoutX="250.0" layoutY="281.0" mnemonicParsing="false" onAction="#handleVoltarButton" text="Voltar" />
-      <Button fx:id="btAlterarPreco" layoutX="95.0" layoutY="281.0" mnemonicParsing="false" onAction="#handleAlterarPrecoButton" text="Comprar" />
+      <Button fx:id="btComprar" layoutX="95.0" layoutY="281.0" mnemonicParsing="false" onAction="#handleComprarButton" text="Comprar" />
    </children>
 </AnchorPane>
