@@ -3,8 +3,10 @@ package br.ufrpe.bcc.ip2.projeto.controladores;
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Usuario;
 import br.ufrpe.bcc.ip2.projeto.exceptions.*;
 import br.ufrpe.bcc.ip2.projeto.repositorios.IRepositorioDeUsuario;
-import br.ufrpe.bcc.ip2.projeto.classesBasicas.Cartao;
+import java.util.LinkedList;
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Cliente;
+import br.ufrpe.bcc.ip2.projeto.classesBasicas.Desenvolvedor;
+import br.ufrpe.bcc.ip2.projeto.classesBasicas.Jogo;
 
 public class ControladorDeUsuario {
 	
@@ -26,10 +28,6 @@ public class ControladorDeUsuario {
 		return this.repositorio.procurar(login);
 	}
 	
-	//public Usuario procurarCartao(String login, String numCartao, int senhaCartao){
-		//return this.repositorio.procurar(login, numCartao, senhaCartao);
-	//}
-	
 	public void removerUsuario(String login) throws NaoExisteException{
 		Usuario usuario = this.repositorio.procurar(login);
 		if(usuario != null){
@@ -45,8 +43,16 @@ public class ControladorDeUsuario {
 		}else throw new NaoExisteException("Usuario");
 	}
 	
-	/*public boolean existe(Cartao cartao, String login){
-		return this.repositorio.equals(cartao);
+	public LinkedList<Cliente> getClienteArray() {
+		return repositorio.getClienteArray();
+	}
+	
+	public LinkedList<Desenvolvedor> getDevArray() {
+		return repositorio.getDevArray();
+	}
+	
+	/*public LinkedList<Jogo> getJogosDoClienteArray(Cliente cliente) {
+		return repositorio.getJogosDoClienteArray(cliente);
 	}*/
 	
 }

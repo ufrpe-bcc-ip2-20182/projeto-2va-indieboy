@@ -1,5 +1,7 @@
 package br.ufrpe.bcc.ip2.projeto.controladores;
 
+import java.util.LinkedList;
+
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Jogo;
 import br.ufrpe.bcc.ip2.projeto.exceptions.*;
 import br.ufrpe.bcc.ip2.projeto.repositorios.IRepositorioDeJogo;
@@ -40,6 +42,10 @@ public class ControladorDeJogo {
 		}else{
 			throw new NaoExisteException("Jogo");
 		}
+	}
+	
+	public LinkedList<Jogo> getJogoArray() {
+		return repositorio.getJogoArray();
 	}
 	
 }

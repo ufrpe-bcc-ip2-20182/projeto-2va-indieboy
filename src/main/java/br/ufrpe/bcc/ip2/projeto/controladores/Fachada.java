@@ -39,4 +39,5 @@ public class Fachada {
 	public ControladorDeLogin contLogin() {
 		return this.controladorLogin;
 	}
+	
 }

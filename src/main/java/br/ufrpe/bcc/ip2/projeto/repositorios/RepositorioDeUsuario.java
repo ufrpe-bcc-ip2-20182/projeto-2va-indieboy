@@ -2,12 +2,15 @@ package br.ufrpe.bcc.ip2.projeto.repositorios;
 
 import java.util.LinkedList;
 
+import br.ufrpe.bcc.ip2.projeto.classesBasicas.Cliente;
+import br.ufrpe.bcc.ip2.projeto.classesBasicas.Desenvolvedor;
+import br.ufrpe.bcc.ip2.projeto.classesBasicas.Jogo;
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Usuario;
 
 public class RepositorioDeUsuario implements IRepositorioDeUsuario{
 	
 	private static RepositorioDeUsuario repositorioUsuario;
-	private LinkedList <Usuario> repositorio = new LinkedList <Usuario>();;
+	private LinkedList <Usuario> repositorio = new LinkedList <Usuario>();
 	
 	public static RepositorioDeUsuario getInstance(){
 		if(repositorioUsuario == null){
@@ -55,4 +58,27 @@ public class RepositorioDeUsuario implements IRepositorioDeUsuario{
 		}
 		return null;
 	}
+	
+	public LinkedList<Cliente> getClienteArray() {
+		LinkedList<Cliente> cliente = new LinkedList <Cliente>();
+		for(int i = 0; i<this.repositorio.size(); ++i){
+			if(repositorio.get(i) instanceof Cliente)
+				cliente.add((Cliente) repositorio.get(i));
+		}
+		return cliente;
+	}
+	
+	public LinkedList<Desenvolvedor> getDevArray() {
+		LinkedList<Desenvolvedor> desenvolvedor = new LinkedList <Desenvolvedor>();
+		for(int i = 0; i<this.repositorio.size(); ++i){
+			if(repositorio.get(i) instanceof Desenvolvedor)
+				desenvolvedor.add((Desenvolvedor) repositorio.get(i));
+		}
+		return desenvolvedor;
+	}
+	
+	/*public LinkedList<Jogo> getJogosDoClienteArray(Cliente usuario) {
+		Cliente cliente = (Cliente) procurar(usuario.getLogin());
+		return cliente.getJogosComprados();
+	}*/
 }

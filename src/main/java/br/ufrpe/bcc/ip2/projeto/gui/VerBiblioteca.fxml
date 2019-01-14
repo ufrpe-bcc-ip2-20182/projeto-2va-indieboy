@@ -11,7 +11,7 @@
       <TableView fx:id="tableViewBiblioteca" layoutX="24.0" layoutY="53.0" prefHeight="219.0" prefWidth="346.0">
          <columns>
             <TableColumn fx:id="tableColumnNome" prefWidth="219.0" text="Nome" />
-            <TableColumn fx:id="tableColumnDesenvolvedor" prefWidth="125.0" text="Desenvolvedor" />
+            <TableColumn fx:id="tableColumnGenero" prefWidth="125.0" text="Genero" />
          </columns>
       </TableView>
       <Label layoutX="9.0" layoutY="4.0" text="IndieBoy">

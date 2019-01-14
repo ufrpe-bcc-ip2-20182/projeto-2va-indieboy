@@ -6,14 +6,13 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="326.0" prefWidth="516.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrpe.bcc.ip2.projeto.gui.VerCatalogoController">
    <children>
-      <TableView layoutX="21.0" layoutY="75.0" prefHeight="200.0" prefWidth="464.0">
+      <TableView fx:id="tableViewCatalogo" layoutX="21.0" layoutY="56.0" prefHeight="296.0" prefWidth="561.0">
         <columns>
-          <TableColumn prefWidth="200.0" text="Nome" />
-          <TableColumn prefWidth="75.0" text="Preço" />
-            <TableColumn prefWidth="90.0" text="Gênero" />
-            <TableColumn prefWidth="99.0" text="Desenvolvedor" />
+          <TableColumn fx:id="tableColumnNome" prefWidth="374.0" text="Nome" />
+          <TableColumn fx:id="tableColumnPreco" prefWidth="91.0" text="Preço" />
+            <TableColumn fx:id="tableColumnGenero" prefWidth="95.0" text="Gênero" />
         </columns>
       </TableView>
       <Label layoutX="9.0" layoutY="4.0" text="IndieBoy">
@@ -21,12 +20,12 @@
             <Font size="12.0" />
          </font>
       </Label>
-      <Label layoutX="32.0" layoutY="38.0" text="Catálogo">
+      <Label layoutX="256.0" layoutY="14.0" text="Catálogo">
          <font>
-            <Font size="18.0" />
+            <Font size="23.0" />
          </font>
       </Label>
-      <Button layoutX="299.0" layoutY="281.0" mnemonicParsing="false" text="Voltar" />
-      <Button layoutX="99.0" layoutY="281.0" mnemonicParsing="false" text="ok" />
+      <Button fx:id="btVoltar" layoutX="373.0" layoutY="363.0" mnemonicParsing="false" onAction="#handleVoltarButton" prefHeight="25.0" prefWidth="63.0" text="Voltar" />
+      <Button layoutX="148.0" layoutY="363.0" mnemonicParsing="false" text="Comprar" />
    </children>
 </AnchorPane>

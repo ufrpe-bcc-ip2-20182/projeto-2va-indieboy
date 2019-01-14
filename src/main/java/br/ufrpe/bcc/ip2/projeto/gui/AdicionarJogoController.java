@@ -67,7 +67,7 @@ public class AdicionarJogoController {
     void handleOkButton(ActionEvent event) {
     	String nome = txtNome.getText();
     	double preco = Double.parseDouble(txtPreco.getText());
-    	short classificacao = Short.parseShort(txtClass.getText());
+    	int classificacao = Integer.parseInt(txtClass.getText());
     	String descricao = txtDescricao.getText();
     	String loginDev = txtloginDev.getText();
     	

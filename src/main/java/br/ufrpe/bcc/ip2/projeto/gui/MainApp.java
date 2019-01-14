@@ -4,7 +4,6 @@ import javafx.application.Application;
 import java.util.ArrayList;
 
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Admin;
-import br.ufrpe.bcc.ip2.projeto.classesBasicas.Cliente;
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Desenvolvedor;
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Usuario;
 import br.ufrpe.bcc.ip2.projeto.controladores.Fachada;

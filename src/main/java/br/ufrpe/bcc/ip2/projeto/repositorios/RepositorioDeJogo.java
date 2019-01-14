@@ -48,4 +48,8 @@ public class RepositorioDeJogo implements IRepositorioDeJogo{
 		repositorio.get(indice).setPreco(novoPreco);
 	}
 		
+	public LinkedList<Jogo> getJogoArray() {
+		return repositorio;
+	}
+	
 }

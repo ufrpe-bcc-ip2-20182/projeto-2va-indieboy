@@ -5,13 +5,13 @@ import java.util.LinkedList;
 public class Jogo {
 	private String nome;
 	private Genero genero;
-	private short classificacaoEtaria;
+	private int classificacaoEtaria;
 	private Desenvolvedor desenvolvedor;
 	private double preco;
 	private String descricao;
 	private LinkedList <String> comentarios;
 
-	public Jogo(String nome, Genero genero, short classificacaoEtaria, Desenvolvedor desenvolvedor, double preco,
+	public Jogo(String nome, Genero genero, int classificacaoEtaria, Desenvolvedor desenvolvedor, double preco,
 			String descricao) {
 		this.nome = nome;
 		this.genero = genero;
@@ -38,7 +38,7 @@ public class Jogo {
 		this.genero = genero;
 	}
 
-	public short getClassificacaoEtaria() {
+	public int getClassificacaoEtaria() {
 		return classificacaoEtaria;
 	}
 

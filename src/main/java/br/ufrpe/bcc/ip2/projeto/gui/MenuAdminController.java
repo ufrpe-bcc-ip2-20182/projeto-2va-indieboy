@@ -23,7 +23,7 @@ public class MenuAdminController {
 
     @FXML
     void handleSessoesButton(ActionEvent event) {
-    	
+    	//MainApp.trocaCena(15);
     }
 
     @FXML
@@ -33,7 +33,7 @@ public class MenuAdminController {
 
     @FXML
     void handleClientesButton(ActionEvent event) {
-
+    	//MainApp.trocaCena(16);
     }
 
     @FXML
@@ -43,7 +43,7 @@ public class MenuAdminController {
 
     @FXML
     void handleDesenvolvedoresButton(ActionEvent event) {
-
+    	//MainApp.trocaCena(17);
     }
 
 }
