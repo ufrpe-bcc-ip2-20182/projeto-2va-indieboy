@@ -76,7 +76,7 @@ public class AdicionarJogoController {
     	if(usuario != null && (usuario instanceof Desenvolvedor)){
     		Desenvolvedor desenvolvedor = (Desenvolvedor) usuario;
     		if(btAcao.isSelected()){
-        		jogo = new Jogo(nome, Genero.Ação, classificacao, desenvolvedor, preco, descricao);
+        		jogo = new Jogo(nome, Genero.Acao, classificacao, desenvolvedor, preco, descricao);
     		}else{
     			if(btTerror.isSelected()) {
     				jogo = new Jogo(nome, Genero.Terror, classificacao, desenvolvedor, preco, descricao);
