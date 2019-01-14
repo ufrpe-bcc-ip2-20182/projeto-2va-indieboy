@@ -1,8 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
+<AnchorPane prefHeight="326.0" prefWidth="475.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrpe.bcc.ip2.projeto.gui.VerJogosDevController">
+   <children>
+      <TableView fx:id="tableViewJogos" layoutX="24.0" layoutY="53.0" prefHeight="219.0" prefWidth="422.0">
+         <columns>
+            <TableColumn fx:id="tableColumnNome" prefWidth="219.0" text="Nome" />
+            <TableColumn fx:id="tableColumnGenero" prefWidth="125.0" text="Gênero" />
+            <TableColumn fx:id="tablePreco" prefWidth="75.0" text="Preço" />
+         </columns>
+      </TableView>
+      <Label layoutX="9.0" layoutY="4.0" text="IndieBoy">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="21.0" text="Jogos do Desenvolvedor">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btVoltar" layoutX="250.0" layoutY="281.0" mnemonicParsing="false" onAction="#handleVoltarButton" text="Voltar" />
+      <Button fx:id="btAlterarPreco" layoutX="95.0" layoutY="281.0" mnemonicParsing="false" onAction="#handleAlterarPrecoButton" text="Alterar Preço" />
+   </children>
 </AnchorPane>
-

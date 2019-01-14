@@ -17,7 +17,6 @@ public class VerBibliotecaController {
 
 	private ObservableList<Jogo> lista; //falta resolver esse repositorio..
 	
-    @FXML
     private Button btVoltar;
 
     @FXML
@@ -41,6 +40,5 @@ public class VerBibliotecaController {
     void handleVoltarButton(ActionEvent event) {
     	MainApp.trocaCena(2);
     }
-
 }
 
