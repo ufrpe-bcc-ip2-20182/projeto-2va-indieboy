@@ -34,7 +34,7 @@ public class VerSessoesController {
 	
 	@FXML
     void handleVoltarButton(ActionEvent event) {
-    	MainApp.trocaCena(3);
+    	MainApp.trocaCena(1);
     }
 
 }

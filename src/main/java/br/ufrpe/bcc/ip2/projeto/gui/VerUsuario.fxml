@@ -6,9 +6,9 @@
 <?import javafx.scene.text.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="326.0" prefWidth="1027.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrpe.bcc.ip2.projeto.gui.VerUsuarioController">
+<AnchorPane prefHeight="326.0" prefWidth="896.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrpe.bcc.ip2.projeto.gui.VerUsuarioController">
    <children>
-      <TableView fx:id="tableViewUsuario" layoutX="72.0" layoutY="72.0" prefHeight="200.0" prefWidth="804.0">
+      <TableView fx:id="tableViewUsuario" layoutX="72.0" layoutY="72.0" prefHeight="200.0" prefWidth="797.0">
          <columns>
             <TableColumn fx:id="nome" prefWidth="200.0" text="Nome" />
             <TableColumn fx:id="login" prefWidth="200.0" text="Login" />
@@ -26,7 +26,7 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Button fx:id="btVoltar" layoutX="299.0" layoutY="281.0" mnemonicParsing="false" text="Voltar" />
+      <Button fx:id="btVoltar" layoutX="599.0" layoutY="281.0" mnemonicParsing="false" onAction="#handleVoltarButton" text="Voltar" />
       <Button layoutX="99.0" layoutY="281.0" mnemonicParsing="false" text="ok" />
    </children>
 </AnchorPane>
