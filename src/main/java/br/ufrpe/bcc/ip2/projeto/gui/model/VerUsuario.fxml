@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="326.0" prefWidth="896.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrpe.bcc.ip2.projeto.gui.control.VerUsuarioController">
+   <children>
+      <TableView fx:id="tableViewUsuario" layoutX="72.0" layoutY="72.0" prefHeight="200.0" prefWidth="797.0">
+         <columns>
+            <TableColumn fx:id="nome" prefWidth="200.0" text="Nome" />
+            <TableColumn fx:id="login" prefWidth="200.0" text="Login" />
+            <TableColumn fx:id="senha" prefWidth="200.0" text="Senha" />
+            <TableColumn fx:id="tableColumnNascimento" prefWidth="200.0" text="Nascimento" />
+         </columns>
+      </TableView>
+      <Label layoutX="9.0" layoutY="4.0" text="IndieBoy">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="38.0" text="Usuários">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btVoltar" layoutX="599.0" layoutY="281.0" mnemonicParsing="false" onAction="#handleVoltarButton" text="Voltar" />
+      <Button layoutX="99.0" layoutY="281.0" mnemonicParsing="false" text="ok" />
+   </children>
+</AnchorPane>

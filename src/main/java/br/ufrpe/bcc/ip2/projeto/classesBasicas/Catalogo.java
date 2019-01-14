@@ -1,8 +1,9 @@
 package br.ufrpe.bcc.ip2.projeto.classesBasicas;
 
+import java.io.Serializable;
 import java.util.LinkedList;
 
-public class Catalogo {
+public class Catalogo implements Serializable{
 	private static Catalogo catalogo;	
 	private LinkedList <Jogo> jogos;
 	

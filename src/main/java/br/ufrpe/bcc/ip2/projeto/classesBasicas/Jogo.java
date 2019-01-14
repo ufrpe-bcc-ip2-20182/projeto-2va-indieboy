@@ -1,8 +1,9 @@
 package br.ufrpe.bcc.ip2.projeto.classesBasicas;
 
+import java.io.Serializable;
 import java.util.LinkedList;
 
-public class Jogo {
+public class Jogo implements Serializable{
 	private String nome;
 	private Genero genero;
 	private int classificacaoEtaria;

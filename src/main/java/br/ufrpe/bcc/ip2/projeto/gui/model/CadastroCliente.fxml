@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="530.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrpe.bcc.ip2.projeto.gui.control.CadastroClienteController">
+   <children>
+      <TextField fx:id="txtNome" layoutX="128.0" layoutY="124.0" prefHeight="31.0" prefWidth="371.0" />
+      <Label layoutX="60.0" layoutY="129.0" text="Nome:" />
+      <Label layoutX="59.0" layoutY="176.0" text="Data de Nascimento:" />
+      <DatePicker fx:id="txtData" layoutX="216.0" layoutY="171.0" prefHeight="31.0" prefWidth="283.0" />
+      <Text layoutX="46.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informações Pessoais: " />
+      <Text layoutX="46.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dados do Cartão:" />
+      <Label layoutX="59.0" layoutY="250.0" text="Número: " />
+      <TextField fx:id="txtNumCartao" layoutX="128.0" layoutY="244.0" prefHeight="31.0" prefWidth="371.0" />
+      <Text layoutX="46.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Defina Login e Senha:" />
+      <Label layoutX="60.0" layoutY="377.0" text="Login: " />
+      <Label layoutX="60.0" layoutY="425.0" text="Senha:" />
+      <PasswordField fx:id="txtSenhaCartao" layoutX="128.0" layoutY="290.0" prefHeight="30.0" prefWidth="371.0" />
+      <TextField fx:id="txtLogin" layoutX="111.0" layoutY="372.0" prefHeight="31.0" prefWidth="393.0" />
+      <PasswordField fx:id="txtSenha" layoutX="111.0" layoutY="420.0" prefHeight="31.0" prefWidth="393.0" />
+      <Button fx:id="btOk" layoutX="99.0" layoutY="482.0" mnemonicParsing="false" onAction="#handleOkButton" text="Ok" />
+      <Button fx:id="btVoltar" layoutX="400.0" layoutY="482.0" mnemonicParsing="false" onAction="#handleVoltarButton" text="Voltar" />
+      <Label layoutX="32.0" layoutY="38.0" prefHeight="30.0" prefWidth="151.0" text="Cadastro Cliente">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="4.0" text="IndieBoy">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="296.0" text="Senha:" />
+   </children>
+</AnchorPane>

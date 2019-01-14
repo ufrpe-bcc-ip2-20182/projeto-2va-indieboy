@@ -1,8 +1,9 @@
 package br.ufrpe.bcc.ip2.projeto.classesBasicas;
 
+import java.io.Serializable;
 import java.util.LinkedList;
 
-public class Desenvolvedor extends Usuario{
+public class Desenvolvedor extends Usuario implements Serializable{
 	private LinkedList <Jogo> jogos;
 	private String nome;
 	

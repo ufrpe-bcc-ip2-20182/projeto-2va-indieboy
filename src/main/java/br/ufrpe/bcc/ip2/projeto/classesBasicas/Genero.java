@@ -1,6 +1,8 @@
 package br.ufrpe.bcc.ip2.projeto.classesBasicas;
 
-public enum Genero {
+import java.io.Serializable;
+
+public enum Genero implements Serializable {
 	Acao(1),        Terror(2),
 	Esporte(3),     Outros(4),
 	Plataforma(5),  Puzzle(6),          

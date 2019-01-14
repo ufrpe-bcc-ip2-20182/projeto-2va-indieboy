@@ -1,9 +1,10 @@
 package br.ufrpe.bcc.ip2.projeto.classesBasicas;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-public class Sessao {
+public class Sessao implements Serializable{
 	private int numSessao;
 	private LocalDate data;
 	private LocalTime horarioInicio;

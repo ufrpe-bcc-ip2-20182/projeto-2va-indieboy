@@ -1,6 +1,8 @@
 package br.ufrpe.bcc.ip2.projeto.classesBasicas;
 
-public class Cartao {
+import java.io.Serializable;
+
+public class Cartao implements Serializable{
 	private String numCartao;
 	private int senhaCartao;
 	

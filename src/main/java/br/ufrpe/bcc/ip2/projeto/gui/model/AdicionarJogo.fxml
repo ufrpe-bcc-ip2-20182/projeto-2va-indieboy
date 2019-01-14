@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="672.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrpe.bcc.ip2.projeto.gui.control.AdicionarJogoController">
+   <children>
+      <Label layoutX="60.0" layoutY="101.0" text="Nome:" />
+      <TextField fx:id="txtNome" layoutX="110.0" layoutY="96.0" prefHeight="31.0" prefWidth="479.0" />
+      <Label layoutX="327.0" layoutY="181.0" text="Class Etaria:" />
+      <Label layoutX="60.0" layoutY="181.0" text="Preço:" />
+      <TitledPane animated="false" layoutX="76.0" layoutY="306.0" prefHeight="200.0" prefWidth="250.0" text="Gênero">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="117.0" prefWidth="248.0">
+               <children>
+                  <RadioButton fx:id="btAcao" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Ação" />
+                  <RadioButton fx:id="btTerror" layoutX="14.0" layoutY="44.0" mnemonicParsing="false" text="Terror" />
+                  <RadioButton fx:id="btEsporte" layoutX="14.0" layoutY="73.0" mnemonicParsing="false" text="Esporte" />
+                  <RadioButton fx:id="btPuzzle" layoutX="153.0" layoutY="14.0" mnemonicParsing="false" text="Puzzle" />
+                  <RadioButton fx:id="btPlataforma" layoutX="14.0" layoutY="101.0" mnemonicParsing="false" text="Plataforma" />
+                  <RadioButton fx:id="btFPS" layoutX="154.0" layoutY="44.0" mnemonicParsing="false" text="FPS" />
+                  <RadioButton fx:id="btOutros" layoutX="152.0" layoutY="101.0" mnemonicParsing="false" text="Outros" />
+                  <RadioButton fx:id="btRTS" layoutX="154.0" layoutY="73.0" mnemonicParsing="false" text="RTS" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <TextField fx:id="txtPreco" layoutX="110.0" layoutY="174.0" prefHeight="31.0" prefWidth="181.0" />
+      <TextArea fx:id="txtDescricao" layoutX="358.0" layoutY="306.0" prefHeight="200.0" prefWidth="250.0" promptText="Descrição do Jogo">
+         <font>
+            <Font size="14.0" />
+         </font></TextArea>
+      <Label layoutX="279.0" layoutY="34.0" prefHeight="27.0" prefWidth="120.0" text="Adicionar Jogo">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btOk" layoutX="99.0" layoutY="570.0" mnemonicParsing="false" onAction="#handleOkButton" text="Ok" />
+      <Button fx:id="btVoltar" layoutX="399.0" layoutY="570.0" mnemonicParsing="false" onAction="#handleVoltarButton" text="Voltar" />
+      <Label layoutX="9.0" layoutY="4.0" text="IndieBoy">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtClass" layoutX="411.0" layoutY="174.0" prefHeight="31.0" prefWidth="181.0" />
+      <TextField fx:id="txtloginDev" layoutX="169.0" layoutY="241.0" prefHeight="31.0" prefWidth="420.0" />
+      <Label layoutX="57.0" layoutY="248.0" text="Confirmar login:" />
+   </children>
+</AnchorPane>

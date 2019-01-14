@@ -1,9 +1,10 @@
 package br.ufrpe.bcc.ip2.projeto.classesBasicas;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.LinkedList;
 
-public class Cliente extends Usuario{
+public class Cliente extends Usuario implements Serializable{
 	private String nome;
 	private LocalDate nascimento;
 	private Cartao cartao;
@@ -15,6 +16,10 @@ public class Cliente extends Usuario{
 		this.nascimento = nascimento;
 		this.cartao = cartao;
 		this.jogosComprados  = new LinkedList<Jogo>();
+	}
+	
+	public Cliente(String login, String senha){
+		super(login, senha);
 	}
 
 	public String getNome() {
