@@ -1,6 +1,7 @@
 package br.ufrpe.bcc.ip2.projeto.gui.control;
 
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Cliente;
+import br.ufrpe.bcc.ip2.projeto.classesBasicas.Desenvolvedor;
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Jogo;
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Usuario;
 import br.ufrpe.bcc.ip2.projeto.controladores.Fachada;

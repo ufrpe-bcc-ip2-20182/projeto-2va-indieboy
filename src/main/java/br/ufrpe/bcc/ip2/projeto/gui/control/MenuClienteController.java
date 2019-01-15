@@ -1,7 +1,10 @@
 package br.ufrpe.bcc.ip2.projeto.gui.control;
 
+import java.time.LocalTime;
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Cliente;
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Sessao;
+import br.ufrpe.bcc.ip2.projeto.controladores.Fachada;
+import br.ufrpe.bcc.ip2.projeto.exceptions.NaoExisteException;
 import br.ufrpe.bcc.ip2.projeto.gui.MainApp;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -9,9 +12,8 @@ import javafx.scene.control.Button;
 
 public class MenuClienteController {
 
+	private LocalTime horarioInicio = LocalTime.now();
 	private static int contadorDeSessoes = 0;
-	
-	private Sessao sessao = new Sessao(contador(), null);
     
 	@FXML
     private Button btVoltar;
@@ -42,16 +44,19 @@ public class MenuClienteController {
 
     @FXML
     void handleVoltarButton(ActionEvent event) {
-    	
+    	Sessao sessao = new Sessao(contador(), TelaInicialController.getCliente());
+    	sessao.setHorarioInicio(horarioInicio);
+    	try {
+			Fachada.getInstance().contSessao().adicionarSessao(sessao);
+		} catch (NaoExisteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
     	MainApp.trocaCena(0);
     }
     
     public static int contador(){
 		return contadorDeSessoes + 1;
 	}
-    
-    public static Cliente pegarCliente(){
-    	return TelaInicialController.getCliente();
-    }
 
 }

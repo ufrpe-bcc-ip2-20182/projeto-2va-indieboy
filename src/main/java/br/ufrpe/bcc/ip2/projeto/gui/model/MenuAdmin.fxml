@@ -8,11 +8,10 @@
 
 <AnchorPane prefHeight="366.0" prefWidth="366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrpe.bcc.ip2.projeto.gui.control.MenuAdminController">
    <children>
-      <Button fx:id="btSessoes" layoutX="149.0" layoutY="201.0" mnemonicParsing="false" onAction="#handleSessoesButton" text="Ver Sessões" />
-      <Button fx:id="btAddAdmin" layoutX="136.0" layoutY="247.0" mnemonicParsing="false" onAction="#handleAddAdminButton" text="Adicionar Admin" />
-      <Button fx:id="btClientes" layoutX="149.0" layoutY="100.0" mnemonicParsing="false" onAction="#handleClientesButton" text="Ver Clientes" />
-      <Button fx:id="btVoltar" layoutX="145.0" layoutY="301.0" mnemonicParsing="false" onAction="#handleVoltarButton" text="Sair da Conta" />
-      <Button fx:id="btDesenvolvedores" layoutX="124.0" layoutY="151.0" mnemonicParsing="false" onAction="#handleDesenvolvedoresButton" text="Ver Desenvolvedores" />
+      <Button fx:id="btSessoes" layoutX="144.0" layoutY="146.0" mnemonicParsing="false" onAction="#handleSessoesButton" text="Ver Sessões" />
+      <Button fx:id="btAddAdmin" layoutX="131.0" layoutY="193.0" mnemonicParsing="false" onAction="#handleAddAdminButton" text="Adicionar Admin" />
+      <Button fx:id="btClientes" layoutX="142.0" layoutY="100.0" mnemonicParsing="false" onAction="#handleClientesButton" text="Ver Usuarios" />
+      <Button fx:id="btVoltar" layoutX="140.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleVoltarButton" text="Sair da Conta" />
       <Label layoutX="83.0" layoutY="38.0" prefHeight="34.0" prefWidth="210.0" text="Menu Administrador">
          <font>
             <Font size="23.0" />

@@ -10,21 +10,23 @@ public class Sessao implements Serializable{
 	private LocalTime horarioInicio;
 	private LocalTime horarioFim;
 	private Cliente cliente;
+	private String nomeCliente;
 	private double pagamento;
 	
 	public Sessao(int numSessao, Cliente cliente){
 		this.numSessao = numSessao;
 		this.cliente = cliente;
+		this.nomeCliente = cliente.getNome();
 		data = LocalDate.now();
-		horarioInicio = LocalTime.now();
+		horarioFim = LocalTime.now();
 	}
 
 	public LocalTime getHorarioFim() {
 		return horarioFim;
 	}
 
-	public void setHorarioFim(LocalTime horarioFim) {
-		this.horarioFim = horarioFim;
+	public void setHorarioInicio(LocalTime horarioInicio) {
+		this.horarioInicio = horarioInicio;
 	}
 
 	public double getPagamento() {
@@ -49,5 +51,13 @@ public class Sessao implements Serializable{
 
 	public Cliente getCliente() {
 		return cliente;
+	}
+
+	public String getNomeCliente() {
+		return nomeCliente;
+	}
+
+	public void setNomeCliente(String nomeCliente) {
+		this.nomeCliente = nomeCliente;
 	}	
 }

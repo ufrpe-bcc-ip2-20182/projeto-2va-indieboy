@@ -20,9 +20,6 @@ public class MenuAdminController {
     private Button btSessoes;
 
     @FXML
-    private Button btDesenvolvedores;
-
-    @FXML
     void handleSessoesButton(ActionEvent event) {
     	MainApp.trocaCena(15);
     }
@@ -40,11 +37,6 @@ public class MenuAdminController {
     @FXML
     void handleVoltarButton(ActionEvent event) {
     	MainApp.trocaCena(0);
-    }
-
-    @FXML
-    void handleDesenvolvedoresButton(ActionEvent event) {
-    	MainApp.trocaCena(17);
     }
 
 }

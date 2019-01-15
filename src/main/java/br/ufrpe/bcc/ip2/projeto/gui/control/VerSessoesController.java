@@ -21,14 +21,14 @@ import br.ufrpe.bcc.ip2.projeto.classesBasicas.Cliente;
 
 public class VerSessoesController implements Initializable {
 	
-	private final ObservableList<Sessao> lista = FXCollections.observableArrayList(Fachada.getInstance().contSessao().getSessaoArray());
+	private ObservableList<Sessao> lista;
 	
 	@FXML
     private Button btVoltar;
 	
 	@FXML private TableView <Sessao> tableViewSessao;
 	
-	@FXML private TableColumn <Sessao,String> tableColumnNumero;
+	@FXML private TableColumn <Sessao,Integer> tableColumnNumero;
 	
 	@FXML private TableColumn <Sessao,LocalDate> tableColumnData;
 	
@@ -36,9 +36,14 @@ public class VerSessoesController implements Initializable {
 	
 	@FXML private TableColumn <Sessao,LocalTime> tableColumnFinal;
 	
-	@FXML private TableColumn <Cliente,String> tableColumnCliente;
+	@FXML private TableColumn <Sessao,String> tableColumnCliente;
 	
 	@FXML private TableColumn <Sessao,String> tableColumnPagamento;
+	
+	public void atualizarTable(){
+    	lista = FXCollections.observableArrayList(Fachada.getInstance().contSessao().getSessaoArray());
+    	tableViewSessao.setItems(lista);
+    }
 	
 	@FXML
     void handleVoltarButton(ActionEvent event) {
@@ -47,12 +52,14 @@ public class VerSessoesController implements Initializable {
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		
-		tableColumnCliente.setCellValueFactory(new PropertyValueFactory<Cliente, String>("nome"));
+		atualizarTable();
+		tableColumnCliente.setCellValueFactory(new PropertyValueFactory<Sessao, String>("nomeCliente"));
 		tableColumnPagamento.setCellValueFactory(new PropertyValueFactory<Sessao, String>("pagamento"));
-		tableColumnNumero.setCellValueFactory(new PropertyValueFactory<Sessao, String>("nome"));
-		tableViewSessao.setItems(lista);
-		
+		tableColumnNumero.setCellValueFactory(new PropertyValueFactory<Sessao, Integer>("numSessao"));
+		tableColumnData.setCellValueFactory(new PropertyValueFactory<Sessao, LocalDate>("data"));
+		tableColumnInicio.setCellValueFactory(new PropertyValueFactory<Sessao, LocalTime>("horarioInicio"));
+		tableColumnFinal.setCellValueFactory(new PropertyValueFactory<Sessao, LocalTime>("horarioFim"));
+
 	}
 
 }

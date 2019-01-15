@@ -10,6 +10,7 @@ import br.ufrpe.bcc.ip2.projeto.controladores.Fachada;
 import br.ufrpe.bcc.ip2.projeto.exceptions.CadastroInvalidoException;
 import br.ufrpe.bcc.ip2.projeto.exceptions.JaExisteException;
 import br.ufrpe.bcc.ip2.projeto.gui.control.VerCatalogoController;
+import br.ufrpe.bcc.ip2.projeto.gui.control.VerSessoesController;
 import br.ufrpe.bcc.ip2.projeto.gui.control.VerUsuarioController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -21,8 +22,10 @@ public class MainApp extends Application{
 	
 	private static FXMLLoader verCatalogo;
 	private static FXMLLoader verUsuario;
+	private static FXMLLoader verSessao;
 	private static VerCatalogoController controllerCatalogo;
 	private static VerUsuarioController controllerUsuario;
+	private static VerSessoesController controllerSessao;
 	private static ArrayList<Scene> cenas = new ArrayList<Scene>();
 	private static Stage stage;
 	
@@ -40,8 +43,14 @@ public class MainApp extends Application{
 			if(i == 16){
 				MainApp.controllerUsuario.atualizarTable();
 				stage.setScene(cenas.get(i));
-			}else
-				stage.setScene(cenas.get(i));
+			}else{
+				if(i == 15){
+					MainApp.controllerSessao.atualizarTable();
+					stage.setScene(cenas.get(i));
+				}else{
+					stage.setScene(cenas.get(i));
+				}
+			}
 		}
 			
 	}
@@ -72,15 +81,17 @@ public class MainApp extends Application{
 	    
 	    criaCena("model/AlterarSenhaDesenvolvedor.fxml");//13
 	    criaCena("model/VerJogosDev.fxml");			   //14
-	    criaCena("model/VerSessoes.fxml");               //15
+	    //criaCena("model/VerSessoes.fxml");               //15
+	    verSessao = new FXMLLoader(getClass().getResource("model/VerSessoes.fxml"));
+	    Scene sceneSessao = new Scene(verSessao.load());
+	    controllerSessao = verSessao.getController();
+	    cenas.add(sceneSessao);
+	    
 	    //criaCena("model/VerUsuario.fxml");               //16
 	    verUsuario = new FXMLLoader(getClass().getResource("model/VerUsuario.fxml"));
 	    Scene sceneUsuario = new Scene(verUsuario.load());
 	    controllerUsuario = verUsuario.getController();
 	    cenas.add(sceneUsuario);
-	    
-	    criaCena("model/VerDev.fxml");				   //17
-	    criaCena("model/Compra.fxml");				   //18
 	        
 	    stage.setScene(cenas.get(0));
 	    stage.setTitle("IndieBoy");
