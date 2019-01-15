@@ -1,5 +1,6 @@
 package br.ufrpe.bcc.ip2.projeto.controladores;
 
+import java.io.IOException;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.LinkedList;
@@ -67,6 +68,10 @@ public class ControladorDeSessao {
 	
 	public LinkedList<Sessao> getSessaoArray() {
 		return repositorio.getSessaoArray();
+	}
+	
+	public void salvarDados() throws IOException{
+		repositorio.salvarDados();
 	}
 	
 }

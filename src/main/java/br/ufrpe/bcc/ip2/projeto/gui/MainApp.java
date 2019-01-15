@@ -106,14 +106,14 @@ public class MainApp extends Application{
 			e.printStackTrace();
 		}
     	
-    	Usuario dev = new Desenvolvedor("dev", "123", "dev");
+    	/*Usuario dev = new Desenvolvedor("dev", "123", "dev");
     	try {
 			Fachada.getInstance().contUsuario().adicionarUsuario(dev);
 		} catch (CadastroInvalidoException | JaExisteException e) {
 			e.printStackTrace();
 		}
     	
-    	Cliente cliente = new Cliente("u", "123");
+    	Cliente cliente = new Cliente("u", "123", "Ulisses");
     	try {
 			Fachada.getInstance().contUsuario().adicionarUsuario(cliente);
 		} catch (CadastroInvalidoException | JaExisteException e) {

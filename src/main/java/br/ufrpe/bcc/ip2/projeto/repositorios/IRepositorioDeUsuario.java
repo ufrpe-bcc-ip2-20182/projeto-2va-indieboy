@@ -1,5 +1,6 @@
 package br.ufrpe.bcc.ip2.projeto.repositorios;
 
+import java.io.IOException;
 import java.util.LinkedList;
 
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Cliente;
@@ -19,6 +20,6 @@ public interface IRepositorioDeUsuario {
 	public LinkedList<Cliente> getClienteArray();
 	public LinkedList<Desenvolvedor> getDevArray();
 	public void addJogoComprado(Cliente cliente, Jogo jogoComprado);
-	//public LinkedList<Jogo> getJogosDoClienteArray(Cliente usuario);
+	public void salvarDados() throws IOException;
 	
 }

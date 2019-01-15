@@ -18,8 +18,9 @@ public class Cliente extends Usuario implements Serializable{
 		this.jogosComprados  = new LinkedList<Jogo>();
 	}
 	
-	public Cliente(String login, String senha){
+	public Cliente(String login, String senha, String nome){
 		super(login, senha);
+		this.nome = nome;
 	}
 
 	public String getNome() {

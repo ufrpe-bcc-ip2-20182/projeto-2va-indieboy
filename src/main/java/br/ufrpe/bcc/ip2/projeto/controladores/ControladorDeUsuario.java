@@ -3,6 +3,8 @@ package br.ufrpe.bcc.ip2.projeto.controladores;
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Usuario;
 import br.ufrpe.bcc.ip2.projeto.exceptions.*;
 import br.ufrpe.bcc.ip2.projeto.repositorios.IRepositorioDeUsuario;
+
+import java.io.IOException;
 import java.util.LinkedList;
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Cliente;
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Desenvolvedor;
@@ -65,8 +67,7 @@ public class ControladorDeUsuario {
 		
 	}
 	
-	/*public LinkedList<Jogo> getJogosDoClienteArray(Cliente cliente) {
-		return repositorio.getJogosDoClienteArray(cliente);
-	}*/
-	
+	public void salvarDados() throws IOException{
+		repositorio.salvarDados();
+	}
 }

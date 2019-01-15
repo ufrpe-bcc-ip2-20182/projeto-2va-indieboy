@@ -44,7 +44,7 @@ public class MenuDevController {
 
     @FXML
     void handleEditarPrecoButton(ActionEvent event) {
-    	MainApp.trocaCena(10);
+    	MainApp.trocaCena(9);
     }
     
 }

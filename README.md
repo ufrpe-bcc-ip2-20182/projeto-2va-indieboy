@@ -21,4 +21,4 @@ IndieBoy- Uma plataforma interativa com um usúario que poderá abrir sessões para
 [insira o diagrama de classes do sistema]
 
 ### ImplantaÃ§Ã£o
-[orientaÃ§Ãµes gerais de como executar o sistema (arquivos de configuraÃ§Ã£o, argumentos de linha de comando, etc.)]
+ - O arquivo jar está na pasta do projeto, ele executa assim que solicitado. Utilizamos apenas o JavaFX e o Maven. Se o jar não abrir, basta ir no cmd e navegar até o local do executável e depois executar o comando "java -jar arquivojar.jar".

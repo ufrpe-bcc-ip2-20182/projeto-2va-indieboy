@@ -52,4 +52,7 @@ public class ControladorDeJogo {
 		return repositorio.getJogoArray();
 	}
 	
+	public void salvarDados() throws IOException{
+		repositorio.salvarDados();
+	}
 }

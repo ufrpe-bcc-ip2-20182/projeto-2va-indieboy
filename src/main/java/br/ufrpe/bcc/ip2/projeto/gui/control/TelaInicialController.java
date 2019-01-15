@@ -1,5 +1,7 @@
 package br.ufrpe.bcc.ip2.projeto.gui.control;
 
+import java.io.IOException;
+
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Admin;
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Cliente;
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Desenvolvedor;
@@ -68,6 +70,24 @@ public class TelaInicialController {
 
     @FXML
     void handleSairButton(ActionEvent event) {
+    	try {
+			Fachada.getInstance().contJogo().salvarDados();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	try {
+			Fachada.getInstance().contSessao().salvarDados();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	try {
+			Fachada.getInstance().contUsuario().salvarDados();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
     	System.exit(0);
     }
 

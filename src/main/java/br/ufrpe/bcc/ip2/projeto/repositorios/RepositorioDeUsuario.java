@@ -1,5 +1,12 @@
 package br.ufrpe.bcc.ip2.projeto.repositorios;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.LinkedList;
 
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Cliente;
@@ -19,7 +26,34 @@ public class RepositorioDeUsuario implements IRepositorioDeUsuario{
 		return repositorioUsuario;
 	}
 	
-	private RepositorioDeUsuario (){}
+	private RepositorioDeUsuario() {
+		try {
+			File f = new File("repUsuario.bin");
+			if(f.exists()){
+				FileInputStream fis = new FileInputStream(f);
+				ObjectInputStream ois = new ObjectInputStream(fis);
+				repositorio = (LinkedList<Usuario>) ois.readObject();
+			}else{
+				repositorio = new LinkedList<Usuario>();
+				salvarDados();
+			}
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public void salvarDados() throws IOException{
+		FileOutputStream fos = new FileOutputStream("repUsuario.bin");
+		ObjectOutputStream oos = new ObjectOutputStream(fos);
+		oos.writeObject(repositorio);
+	}
 	
 	public void adicionar(Usuario usuario){
 		repositorio.add(usuario);
