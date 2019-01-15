@@ -1,5 +1,6 @@
 package br.ufrpe.bcc.ip2.projeto.gui.control;
 
+import br.ufrpe.bcc.ip2.projeto.classesBasicas.Cliente;
 import br.ufrpe.bcc.ip2.projeto.classesBasicas.Sessao;
 import br.ufrpe.bcc.ip2.projeto.gui.MainApp;
 import javafx.event.ActionEvent;
@@ -48,5 +49,9 @@ public class MenuClienteController {
     public static int contador(){
 		return contadorDeSessoes + 1;
 	}
+    
+    public static Cliente pegarCliente(){
+    	return TelaInicialController.getCliente();
+    }
 
 }

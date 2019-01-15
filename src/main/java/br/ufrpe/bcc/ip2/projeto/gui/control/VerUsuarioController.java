@@ -21,20 +21,21 @@ import java.util.ResourceBundle;
 
 public class VerUsuarioController implements Initializable{
 	
-	private final ObservableList<Cliente> lista = FXCollections.observableArrayList(Fachada.getInstance().contUsuario().getClienteArray());
+	private ObservableList<Usuario> lista;
 	
 	@FXML
     private Button btVoltar;
 	
-	@FXML private TableView <Cliente> tableViewUsuario;
+	@FXML private TableView <Usuario> tableViewUsuario;
 	
-	@FXML private TableColumn <Cliente,String> tableColumnLogin;
+	@FXML private TableColumn <Usuario,String> login;
 	
-	@FXML private TableColumn <Cliente,String> tableColumnSenha;
+	@FXML private TableColumn <Usuario,String> senha;
 	
-	@FXML private TableColumn <Cliente,String> tableColumnNome;
-	
-	@FXML private TableColumn <Cliente,LocalDate> tableColumnNascimento;
+	public void atualizarTable(){
+    	lista = FXCollections.observableArrayList(Fachada.getInstance().contUsuario().getUsuarioArray());
+    	tableViewUsuario.setItems(lista);
+    }
 	
 	@FXML
     void handleVoltarButton(ActionEvent event) {
@@ -43,11 +44,9 @@ public class VerUsuarioController implements Initializable{
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		/*tableColumnLogin.setCellValueFactory(new PropertyValueFactory<Cliente, String>("login"));
-		tableColumnSenha.setCellValueFactory(new PropertyValueFactory<Cliente, String>("senha"));
-		tableColumnNome.setCellValueFactory(new PropertyValueFactory<Cliente, String>("nome"));
-		tableViewUsuario.setItems(lista);*/
-		
+		atualizarTable();
+		login.setCellValueFactory(new PropertyValueFactory<Usuario, String>("login"));
+		senha.setCellValueFactory(new PropertyValueFactory<Usuario, String>("senha"));
 	}
 	
 }

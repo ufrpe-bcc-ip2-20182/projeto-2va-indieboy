@@ -18,6 +18,10 @@ import javafx.scene.control.TextField;
 
 public class TelaInicialController {
 
+	private static Cliente clienteLogado;
+	private static Admin adminLogado;
+	private static Desenvolvedor devLogado;
+	
     @FXML
     private TextField txtLogin;
 
@@ -41,12 +45,18 @@ public class TelaInicialController {
 		
 		try {
 			Usuario usuario = Fachada.getInstance().contLogin().verificarLogin(login, senha);
-			if(usuario instanceof Cliente == true) 
+			if(usuario instanceof Cliente == true){
+				clienteLogado = (Cliente)usuario;
 				MainApp.trocaCena(2);
-			if(usuario instanceof Desenvolvedor == true)
+			}
+			if(usuario instanceof Desenvolvedor == true){
+				devLogado = (Desenvolvedor) usuario;
 				MainApp.trocaCena(3);
-			if(usuario instanceof Admin == true)
+			}
+			if(usuario instanceof Admin == true){
+				adminLogado = (Admin) usuario;
 				MainApp.trocaCena(1);
+			}
 		} catch (NaoExisteException | CamposInvalidosException e) {
 			Alert alert = new Alert(AlertType.ERROR);
 			alert.setTitle("Erro no login");
@@ -65,5 +75,16 @@ public class TelaInicialController {
     void handleCadastrarButton(ActionEvent event) {
     	MainApp.trocaCena(4);
     }
+    
+    public static Cliente getCliente(){
+    	return clienteLogado;
+    }
+    
+    public static Admin getAdmin(){
+    	return adminLogado;
+    }
 
+    public static Desenvolvedor getDev(){
+    	return devLogado;
+    }
 }

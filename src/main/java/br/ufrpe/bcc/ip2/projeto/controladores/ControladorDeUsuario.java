@@ -51,6 +51,20 @@ public class ControladorDeUsuario {
 		return repositorio.getDevArray();
 	}
 	
+	public void addJogoComprado(String login, Jogo jogoComprado){
+		if(repositorio.procurar(login) instanceof Cliente){
+			Cliente cliente = (Cliente) repositorio.procurar(login);
+			repositorio.addJogoComprado(cliente, jogoComprado);
+		}else{
+			
+		}
+	}
+	
+	public LinkedList<Usuario> getUsuarioArray(){
+		return repositorio.getUsuarioArray();
+		
+	}
+	
 	/*public LinkedList<Jogo> getJogosDoClienteArray(Cliente cliente) {
 		return repositorio.getJogosDoClienteArray(cliente);
 	}*/

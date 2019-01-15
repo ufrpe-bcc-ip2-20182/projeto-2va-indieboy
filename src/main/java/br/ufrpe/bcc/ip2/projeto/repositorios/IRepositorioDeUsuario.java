@@ -15,8 +15,10 @@ public interface IRepositorioDeUsuario {
 	public void remover(String login);
 	public void atualizar(int indice, String novaSenha);
 	public Usuario login(String login, String senha);
+	public LinkedList<Usuario> getUsuarioArray();
 	public LinkedList<Cliente> getClienteArray();
 	public LinkedList<Desenvolvedor> getDevArray();
+	public void addJogoComprado(Cliente cliente, Jogo jogoComprado);
 	//public LinkedList<Jogo> getJogosDoClienteArray(Cliente usuario);
 	
 }

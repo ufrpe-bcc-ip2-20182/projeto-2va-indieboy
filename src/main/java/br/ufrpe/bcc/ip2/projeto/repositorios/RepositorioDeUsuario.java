@@ -60,12 +60,14 @@ public class RepositorioDeUsuario implements IRepositorioDeUsuario{
 	}
 	
 	public LinkedList<Cliente> getClienteArray() {
-		LinkedList<Cliente> cliente = new LinkedList <Cliente>();
+		LinkedList<Cliente> clientes = new LinkedList <Cliente>();
+		Cliente cliente = null;
 		for(int i = 0; i<this.repositorio.size(); ++i){
 			if(repositorio.get(i) instanceof Cliente)
-				cliente.add((Cliente) repositorio.get(i));
+				cliente = (Cliente) repositorio.get(i);
+				clientes.add(cliente);
 		}
-		return cliente;
+		return clientes;
 	}
 	
 	public LinkedList<Desenvolvedor> getDevArray() {
@@ -77,8 +79,17 @@ public class RepositorioDeUsuario implements IRepositorioDeUsuario{
 		return desenvolvedor;
 	}
 	
+	public void addJogoComprado(Cliente cliente, Jogo jogoComprado){
+		cliente.addJogoComprado(jogoComprado);
+	}
+	
 	/*public LinkedList<Jogo> getJogosDoClienteArray(Cliente usuario) {
 		Cliente cliente = (Cliente) procurar(usuario.getLogin());
 		return cliente.getJogosComprados();
 	}*/
+	
+	public LinkedList<Usuario> getUsuarioArray() {
+		return repositorio;
+	}
+	
 }
